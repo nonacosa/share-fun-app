@@ -30,7 +30,7 @@ jobs:
         run: curl -sSf https://raw.githubusercontent.com/nonacosa/notion-site/master/install.sh | sh
 
       - name: Run notion-site  
-        run: ./notion-site
+        run: notion-site
         env:
           NOTION_SECRET: ${{ secrets.NOTION_SECRET }}
 
