@@ -54,21 +54,7 @@ jobs:
             echo "No content or theme changes detected."
           fi
 
-      # 6️⃣ Commit new results only if content or themes changed
-      - name: Commit new results
-        if: steps.check_changes.outputs.changed == 'true'
-        run: |
-          git config user.email "action@github.com"
-          git config user.name "GitHub Actions"
-          git add ./content ./themes
-          git commit -m "Incremental content update from Notion"
-
-      # 7️⃣ Push changes only if content changed
-      - name: Push changes
-        if: steps.check_changes.outputs.changed == 'true'
-        run: git push origin main
-
-      # 8️⃣ Setup Hugo (cached)
+      # 6️⃣ Setup Hugo (cached) - 在提交前先准备构建环境
       - name: Cache Hugo binary
         if: steps.check_changes.outputs.changed == 'true'
         uses: actions/cache@v3
@@ -85,7 +71,7 @@ jobs:
           fi
           echo "$HOME/hugo" >> $GITHUB_PATH
 
-      # 9️⃣ Cache Hugo modules
+      # 7️⃣ Cache Hugo modules
       - uses: actions/cache@v3
         if: steps.check_changes.outputs.changed == 'true'
         with:
@@ -94,7 +80,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-hugomod-
 
-      # 🔟 Cache Node.js dependencies
+      # 8️⃣ Cache Node.js dependencies
       - name: Cache Node.js modules
         if: steps.check_changes.outputs.changed == 'true'
         uses: actions/cache@v3
@@ -106,13 +92,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      # 11️⃣ Build Hugo site
-      - name: Build Hugo site
-        if: steps.check_changes.outputs.changed == 'true'
-        run: hugo --minify
-
-      # 12️⃣ Run additional build steps after Hugo
-      - name: Run pagefind and generate
+      # 9️⃣ Install Node dependencies first
+      - name: Install Node dependencies
         if: steps.check_changes.outputs.changed == 'true'
         run: |
           if [ -f package-lock.json ]; then
@@ -121,17 +102,31 @@ jobs:
           else
             echo "No lockfile, generating one with npm install"
             npm install --prefer-offline --no-audit --progress=false
-            # Only commit lock file if there are changes
-            git config user.email "action@github.com"
-            git config user.name "GitHub Actions"
-            git add package-lock.json
-            git commit -m "Add generated package-lock.json [skip ci]" || echo "No lock file changes to commit"
-            git push origin main || echo "No lock file changes to push"
           fi
+
+      # 🔟 Build and test everything before committing
+      - name: Build and test
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          hugo --minify
           npm run build:pagefind
           npm run build:generate
 
-      # 13️⃣ Deploy site if content changed
+      # 1️⃣1️⃣ Only commit and push if build succeeds
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "GitHub Actions"
+          git add ./content ./themes
+          # Commit lock file if it was generated
+          if [ -f package-lock.json ] && [ -z "$(git ls-files package-lock.json)" ]; then
+            git add package-lock.json
+          fi
+          git commit -m "Incremental content update from Notion"
+          git push origin main
+
+      # 1️⃣2️⃣ Deploy site if build and commit succeed
       - name: Deploy
         if: steps.check_changes.outputs.changed == 'true'
         uses: peaceiris/actions-gh-pages@v3
@@ -141,7 +136,7 @@ jobs:
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
 
-      # 14️⃣ Print message if no content changes
+      # 1️⃣3️⃣ Print message if no content changes
       - name: No changes detected
         if: steps.check_changes.outputs.changed == 'false'
         run: echo "No changes detected. Workflow finished without any commit, build, or deploy."
