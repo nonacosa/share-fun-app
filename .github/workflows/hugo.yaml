@@ -1,0 +1,147 @@
+name: build
+permissions:
+  contents: write
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+jobs:
+  sync:
+    name: Sync from Notion
+    runs-on: ubuntu-latest
+    steps:
+      # 1️⃣ Checkout repo including submodules
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      # 2️⃣ Force sync with origin/main (but preserve content directory)
+      - name: Sync with origin/main
+        run: |
+          git fetch origin
+          git reset --soft origin/main
+          git status
+
+      # 3️⃣ Run notion-site to update content incrementally
+      - name: Run notion-site
+        uses: nonacosa/notion-site@master
+        env:
+          NOTION_SECRET: ${{ secrets.NOTION_SECRET }}
+
+      # 4️⃣ Debug content (optional)
+      - name: Debug content
+        run: |
+          echo "---- ls content ----"
+          ls -R ./content || echo "No content directory"
+          echo "---- git status ----"
+          git status
+          echo "---- git diff --stat ----"
+          git diff --stat
+
+      # 5️⃣ Check if content or themes changed compared to last commit
+      - name: Check content changes
+        id: check_changes
+        run: |
+          if [ -n "$(git status --porcelain ./content)" ] || [ -n "$(git status --porcelain ./themes)" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Changes detected:"
+            git status --porcelain ./content ./themes
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No content or theme changes detected."
+          fi
+
+      # 6️⃣ Commit new results only if content or themes changed
+      - name: Commit new results
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "GitHub Actions"
+          git add ./content ./themes
+          git commit -m "Incremental content update from Notion"
+
+      # 7️⃣ Push changes only if content changed
+      - name: Push changes
+        if: steps.check_changes.outputs.changed == 'true'
+        run: git push origin main
+
+      # 8️⃣ Setup Hugo (cached)
+      - name: Cache Hugo binary
+        if: steps.check_changes.outputs.changed == 'true'
+        uses: actions/cache@v3
+        with:
+          path: ~/hugo
+          key: hugo-${{ runner.os }}-0.148.2
+
+      - name: Install Hugo
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          if [ ! -f ~/hugo/hugo ]; then
+            mkdir -p ~/hugo
+            curl -sSL https://github.com/gohugoio/hugo/releases/download/v0.148.2/hugo_extended_0.148.2_Linux-64bit.tar.gz | tar -xz -C ~/hugo
+          fi
+          echo "$HOME/hugo" >> $GITHUB_PATH
+
+      # 9️⃣ Cache Hugo modules
+      - uses: actions/cache@v3
+        if: steps.check_changes.outputs.changed == 'true'
+        with:
+          path: /tmp/hugo_cache
+          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-hugomod-
+
+      # 🔟 Cache Node.js dependencies
+      - name: Cache Node.js modules
+        if: steps.check_changes.outputs.changed == 'true'
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.npm
+            node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      # 11️⃣ Build Hugo site
+      - name: Build Hugo site
+        if: steps.check_changes.outputs.changed == 'true'
+        run: hugo --minify
+
+      # 12️⃣ Run additional build steps after Hugo
+      - name: Run pagefind and generate
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          if [ -f package-lock.json ]; then
+            echo "Using npm ci (lockfile detected)"
+            npm ci --prefer-offline --no-audit --progress=false
+          else
+            echo "No lockfile, generating one with npm install"
+            npm install --prefer-offline --no-audit --progress=false
+            # Only commit lock file if there are changes
+            git config user.email "action@github.com"
+            git config user.name "GitHub Actions"
+            git add package-lock.json
+            git commit -m "Add generated package-lock.json [skip ci]" || echo "No lock file changes to commit"
+            git push origin main || echo "No lock file changes to push"
+          fi
+          npm run build:pagefind
+          npm run build:generate
+
+      # 13️⃣ Deploy site if content changed
+      - name: Deploy
+        if: steps.check_changes.outputs.changed == 'true'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+
+      # 14️⃣ Print message if no content changes
+      - name: No changes detected
+        if: steps.check_changes.outputs.changed == 'false'
+        run: echo "No changes detected. Workflow finished without any commit, build, or deploy."

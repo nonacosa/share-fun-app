@@ -1,0 +1,94 @@
+# Tags translations for English
+[Tools]
+other = "Tools"
+
+[Novel]
+other = "Novel"
+
+[Programming]
+other = "Programming"
+
+[Plugin]
+other = "Plugin"
+
+[Browser-Plugin]
+other = "Browser Plugin"
+
+[Efficiency]
+other = "Efficiency"
+
+[AI-Tools]
+other = "AI Tools"
+
+[Design]
+other = "Design"
+
+[Education]
+other = "Education"
+
+[English-Learning]
+other = "English Learning"
+
+[Content-Creation]
+other = "Content Creation"
+
+[News]
+other = "News"
+
+[Discovery]
+other = "Discovery"
+
+[Advanced-Technology]
+other = "Advanced Technology"
+
+[Open-Source]
+other = "Open Source"
+
+[Gaming]
+other = "Gaming"
+
+[Freebie]
+other = "Freebie"
+
+[Marketing]
+other = "Marketing"
+
+[Social]
+other = "Social"
+
+[Free-Resources]
+other = "Free Resources"
+
+[Navigation]
+other = "Navigation"
+
+[UI]
+other = "UI"
+
+[SAAS]
+other = "SAAS"
+
+[Component-Library]
+other = "Component Library"
+
+[Frontend]
+other = "Frontend"
+
+[API]
+other = "API"
+
+[Alternative]
+other = "Alternative"
+
+[Animation]
+other = "Animation"
+
+[Resource-Site]
+other = "Resource Site"
+
+# UI translations
+[related-posts]
+other = "Related Posts"
+
+[similar-tags-posts]
+other = "Similar Tags Posts"

@@ -1,0 +1,94 @@
+# Tags translations for Chinese
+[Tools]
+other = "工具"
+
+[Novel]
+other = "新奇"
+
+[Programming]
+other = "编程"
+
+[Plugin]
+other = "插件"
+
+[Browser-Plugin]
+other = "浏览器插件"
+
+[Efficiency]
+other = "效率"
+
+[AI-Tools]
+other = "AI工具"
+
+[Design]
+other = "设计"
+
+[Education]
+other = "教育"
+
+[English-Learning]
+other = "英语学习"
+
+[Content-Creation]
+other = "内容创作"
+
+[News]
+other = "新闻"
+
+[Discovery]
+other = "发现"
+
+[Advanced-Technology]
+other = "前沿技术"
+
+[Open-Source]
+other = "开源推荐"
+
+[Gaming]
+other = "游戏"
+
+[Freebie]
+other = "羊毛"
+
+[Marketing]
+other = "营销"
+
+[Social]
+other = "社交"
+
+[Free-Resources]
+other = "免费资源"
+
+[Navigation]
+other = "导航站"
+
+[UI]
+other = "UI"
+
+[SAAS]
+other = "SAAS"
+
+[Component-Library]
+other = "组件库"
+
+[Frontend]
+other = "前端"
+
+[API]
+other = "API"
+
+[Alternative]
+other = "平替"
+
+[Animation]
+other = "动画"
+
+[Resource-Site]
+other = "资源站"
+
+# UI translations
+[related-posts]
+other = "相关推荐"
+
+[similar-tags-posts]
+other = "相似标签文章"

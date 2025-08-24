@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# 优先抓取重要页面
+Sitemap: https://findsofun.com/sitemap.xml
+
+# 禁止抓取无价值页面
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /themes/
+Disallow: /static/js/
+Disallow: /static/css/
+
+# 允许搜索引擎抓取重要资源
+Allow: /images/
+Allow: /media/
+
+# 搜索引擎友好配置
+Crawl-delay: 1

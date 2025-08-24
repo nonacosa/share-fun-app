@@ -1,0 +1,7 @@
+/node_modules
+/public
+/content_back
+/resources/_gen
+/.hugo_build.lock
+.env
+notion-site

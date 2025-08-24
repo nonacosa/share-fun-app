@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Squishy Tag Styles */
+.squishy-tag {
+  background-color: #f0f0f0;
+  color: #242424;
+  box-shadow: 
+    inset 0 1px 0 0 #f4f4f4,
+    0 1px 0 0 #efefef,
+    0 2px 0 0 #ececec,
+    0 3px 0 0 #e0e0e0,
+    0 4px 0 0 #dedede,
+    0 5px 0 0 #dcdcdc,
+    0 6px 0 0 #cacaca,
+    0 6px 8px 0 #cecece;
+}
+
+.squishy-tag:hover {
+  transform: translateY(2px);
+  box-shadow: 
+    inset 0 1px 0 0 #f4f4f4,
+    0 1px 0 0 #efefef,
+    0 1px 0 0 #ececec,
+    0 2px 0 0 #e0e0e0,
+    0 2px 0 0 #dedede,
+    0 3px 0 0 #dcdcdc,
+    0 4px 0 0 #cacaca,
+    0 4px 6px 0 #cecece;
+}
+
+@layer base {
+	blockquote {
+		@apply bg-gray-100 border-l-4 border-gray-300 !not-italic before:content-['Note:'] before:font-bold py-3 px-4 rounded-md;
+
+		p {
+			@apply !my-0 !py-0;
+		}
+	}
+}
+
+@layer components {
+
+	.insert-link {
+		@apply before:absolute before:content-[''] before:z-10 before:top-0 before:right-0 before:left-0 before:bottom-0 before:pointer-events-auto
+	}
+}
+
+@layer utilities {
+
+	.close {
+		display: none;
+	}
+
+	.open {
+		display: block;
+	}
+
+}

@@ -1,0 +1,12 @@
+notion:
+  databaseId: 2527eff93d7e81aab364e50cf7e1caa1
+  filterProp: Status
+  filterValue:
+    # - Finished
+    # - Published
+    - RePublish
+    - Draft
+
+  publishedValue: Published
+markdown:
+  homePath: ./
