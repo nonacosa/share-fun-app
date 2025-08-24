@@ -5,7 +5,7 @@ notion:
     # - Finished
     # - Published
     - RePublish
-    - Draft
+    - Pre
 
   publishedValue: Published
 markdown:
