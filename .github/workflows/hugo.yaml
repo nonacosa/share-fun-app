@@ -25,9 +25,12 @@ jobs:
           git reset --soft origin/main
           git status
 
-      # 3️⃣ Run notion-site to update content incrementally
-      - name: Run notion-site
-        uses: nonacosa/notion-site@master
+      # 3️⃣ Install and run notion-site
+      - name: Install notion-site
+        run: curl -sSf https://raw.githubusercontent.com/nonacosa/notion-site/master/install.sh | sh
+
+      - name: Run notion-site  
+        run: ./notion-site
         env:
           NOTION_SECRET: ${{ secrets.NOTION_SECRET }}
 
