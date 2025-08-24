@@ -1,0 +1,27 @@
+<div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+
+  <div class="flex flex-wrap space-y-6 mb-4">
+
+    <div class="self-center flex flex-col w-full md:w-2/5">
+
+      {{ partial "content/social-media.html" . }}
+
+    </div>
+    
+  </div>
+
+  <div class="my-8">
+    <ul class="flex items-center space-x-4">
+      {{ range .Site.Menus.main }}
+        <li><a class="decoration-auto hover:underline font-semibold" href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+
+  <div class="border-t pt-4">
+
+    <p class="text-sm">Copyright © {{ now.Year }}. All rights reserved. <a href="https://findsofun.com/" target="_blank" rel="noopener">findsofun.com</a> power by  <a href="https://github.com/nonacosa/notion-site" target="_blank" rel="noopener">notion-site</a>  </p>
+
+  </div>
+  
+</div>

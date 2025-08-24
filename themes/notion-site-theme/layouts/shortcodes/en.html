@@ -1,0 +1,10 @@
+{{/* 
+English content block shortcode
+Only displays content when current language is en
+Usage: {{< en >}} English content {{< /en >}}
+*/}}
+{{ if or (eq .Site.Language.Lang "en") (eq .Site.Language.Lang "en-US") }}
+<div class="content-en">
+{{ .Inner }}
+</div>
+{{ end }}

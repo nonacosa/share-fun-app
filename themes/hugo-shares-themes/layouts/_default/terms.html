@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+{{- partial "content/breadcrumb.html" . -}}
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-14">
+
+  <section class="md:col-span-2">
+
+    <h2 class="text-3xl font-bold mb-10">{{ .Title | humanize }}</h2>
+
+    <ul class="grid grid-cols-1 md:grid-cols-2 gap-10 text-2xl">
+
+      {{- range .Pages -}}
+      <li class="relative hover:bg-zinc-200 border py-6 px-8 rounded-2xl group">
+
+        <a class="insert-link flex items-center space-x-4" href="{{ .RelPermalink }}">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="group-hover:animate-wiggle" viewBox="0 0 448 512">
+            <path d="M0 80L0 229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7L48 32C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/>
+          </svg>
+          <span>{{ .LinkTitle | humanize }}</span>
+        </a>
+
+        <!-- 融合 tags partial -->
+        {{ with .Params.tags }}
+        <div class="tags flex flex-wrap gap-2 mt-3">
+          {{ range . }}
+            <a href="/tags/{{ . | urlize }}/" class="px-2 py-1 rounded bg-gray-200 hover:bg-gray-300 text-sm">
+              {{ . }}
+            </a>
+          {{ end }}
+        </div>
+        {{ end }}
+
+      </li>
+      {{ end }}
+
+    </ul>
+
+  </section>
+
+  <aside class="md:col-span-1">
+    {{- partial "content/aside.html" . -}}
+  </aside>
+
+</div>
+
+{{ end }}

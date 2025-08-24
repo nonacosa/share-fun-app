@@ -1,0 +1,10 @@
+{{/* 
+Chinese content block shortcode
+Only displays content when current language is zh-cn
+Usage: {{< zh-cn >}} 中文内容 {{< /zh-cn >}}
+*/}}
+{{ if or (eq .Site.Language.Lang "zh-cn") (eq .Site.Language.Lang "zh-CN") }}
+<div class="content-zh-cn">
+{{ .Inner }}
+</div>
+{{ end }}

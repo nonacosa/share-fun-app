@@ -1,0 +1,151 @@
+{{ define "main" }}
+
+<!-- Welcome -->
+
+<!-- <div class="my-14 md:py-20 space-y-3 text-left sm:text-center flex flex-col items-start sm:items-center">
+
+  <p class="text-4xl md:text-5xl font-bold"> Welcome! </p>
+  <p class="text-xl sm:w-4/5 md:w-2/3"> {{ .Site.Params.welcomeMessage }} </p>
+
+</div> -->
+
+<!-- Feature post by tag = "feature" -->
+
+<!-- <hr class="mt-4 mb-8">
+
+<div class="mb-14 space-y-6">
+
+  <h2 class="text-3xl md:text-4xl font-bold mr-auto">最受关注</h2>
+
+  {{- range where .Site.RegularPages "Params.tags" "intersect" (slice "feature" ) | first 1 -}}
+  <section class="block md:flex relative group p-6 lg:p-10 space-y-6 md:space-y-0 md:space-x-6 bg-zinc-100 rounded-3xl hover:bg-blue-100">
+    <figure class="basis-1/2 w-full aspect-video overflow-hidden rounded-2xl border">
+
+      {{- if .Params.image }}
+
+        {{- if (strings.HasPrefix .Params.image "http") }}
+
+          <img class="object-cover group-hover:scale-105 transition duration-500 cursor-pointer" src="{{ .Params.image }}" alt="{{ $.Name }}" style="width: 100%; height: 100%; object-fit: cover;">
+
+        {{- else }}
+
+          {{- with $imgfeature := .Resources.Get .Params.image }}
+            {{ $imgfeature := $imgfeature.Resize "720x Q85" -}}
+            <img class="object-cover group-hover:scale-105 transition duration-500 cursor-pointer" src="{{ $imgfeature.Permalink }}" alt="{{ $.Name }}" width="{{ $imgfeature.Width }}" height="{{ $imgfeature.Height }}">
+          {{- end }}
+
+        {{- end }}
+
+      {{- end }}
+
+    </figure>
+    <div class="basis-1/2 self-center">
+      <time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}">
+        <span class="font-bold">{{ .Date.Format "Jan 02, 2006" }}</span>
+      </time>
+      <h2 class="text-2xl md:text-3xl lg:text-5xl font-bold">
+        <a class="before:content-[''] before:z-10 before:top-0 before:right-0 before:left-0 before:bottom-0 before:absolute before:pointer-events-auto" href="{{ .Permalink }}">
+          {{ .Title }}
+        </a>
+      </h2>
+      <p class="text-normal leading-normal text-zinc-500 line-clamp-2 mb-4">{{ .Params.description }}</p>
+    </div>
+  </section>
+  {{ end -}}
+
+</div> -->
+
+<!-- / End feature post  -->
+
+<!-- Tags section -->
+<section class="mb-8">
+  <div class="relative">
+    <div id="tagsContainer" class="flex flex-wrap gap-3 overflow-hidden transition-all duration-300" style="max-height: 3rem;">
+      {{ $tags := slice }}
+      {{ range $name, $weightedPages := .Site.Taxonomies.tags }}
+        {{ $count := len $weightedPages.Pages }}
+        {{ $tags = $tags | append (dict "name" $name "count" $count) }}
+      {{ end }}
+
+      {{ $tags = sort $tags "count" "desc" }}
+
+      {{ range $tags }}
+        <a href="{{ "/tags/" | relLangURL }}{{ .name | urlize }}" 
+           class="squishy-tag relative inline-flex items-center gap-1.5 text-sm font-semibold rounded-lg px-3 py-1.5 transition-all duration-300 cursor-pointer flex-shrink-0">
+          <span>{{ .name }}</span>
+          <span class="text-xs bg-white rounded-full px-1.5 py-0.5 font-medium">{{ .count }}</span>
+        </a>
+      {{ end }}
+    </div>
+    
+    <!-- Expand/Collapse button - positioned absolutely -->
+    <button id="toggleTags" 
+            class="absolute top-0 right-0 squishy-tag relative inline-flex items-center gap-1.5 text-sm font-semibold rounded-lg px-3 py-1.5 transition-all duration-300 cursor-pointer flex-shrink-0 bg-white border-2 border-dashed border-gray-300 hover:border-gray-400"
+            onclick="toggleTagsVisibility()">
+      <svg id="expandIcon" class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </button>
+  </div>
+</section>
+
+<script>
+function toggleTagsVisibility() {
+  const container = document.getElementById('tagsContainer');
+  const icon = document.getElementById('expandIcon');
+  
+  if (container.style.maxHeight === '3rem') {
+    container.style.maxHeight = 'none';
+    icon.style.transform = 'rotate(180deg)';
+  } else {
+    container.style.maxHeight = '3rem';
+    icon.style.transform = 'rotate(0deg)';
+  }
+}
+</script>
+
+
+
+<hr class="my-8">
+
+
+
+<!-- Start recent post  -->
+
+  <section class="mb-16">
+
+    <div class="flex items-center mb-6">
+
+      <!-- <h2 class="text-3xl md:text-4xl font-bold mr-auto">最新发现</h2> -->
+
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-10">
+
+    {{ $paginator := .Paginate ( where site.RegularPages "Type" "in" site.Params.mainSections) }}
+
+    {{ range $paginator.Pages }}
+
+      {{- partial "content/card" . -}}
+
+    {{ end }}
+
+    </div>
+
+    <!-- Paginate here -->
+
+    <div class="flex items-center mt-10">
+      {{- if $paginator.HasPrev -}}
+        <a class="border rounded-full px-6 py-2 hover:bg-zinc-200 mr-auto" href="{{ $paginator.Prev.URL }}">← Previous</a>
+      {{- end -}}
+
+      {{- if $paginator.HasNext -}}
+        <a class="border rounded-full px-6 py-2 hover:bg-zinc-200" href="{{ $paginator.Next.URL }}">Next →</a>
+      {{- end -}}
+    </div>
+
+  </section>
+
+<!-- / End recent post  -->
+
+{{ end }}

@@ -1,0 +1,44 @@
+{{ define "main" }}
+
+<div class="py-14">
+
+	<div class="mb-14 space-y-2">
+
+		<img class="rounded-3xl" src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+
+		{{- if ( isset .Params "caption" ) }}
+		<figcaption class="text-center italic text-xs text-zinc-400">{{ .Params.caption }}</figcaption>
+		{{- end }}
+
+	</div>
+
+
+	<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+		<article data-pagefind-body class="md:col-span-2 prose lg:prose-lg">
+
+			<header class="not-prose mb-14">
+
+				<h1 class="text-4xl font-bold">{{ .Title }}</h1>
+
+			</header>
+
+			<div id="content" class="prose lg:prose-lg">
+
+				{{- .Content -}}
+
+			</div>
+
+		</article>
+
+		<aside class="md:col-span-1">
+
+			{{- partial "content/aside.html" . -}}
+
+		</aside>
+
+	</div>
+
+</div>
+
+{{ end }}

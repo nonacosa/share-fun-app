@@ -1,0 +1,6 @@
+{{/* 
+Multilingual content wrapper shortcode
+Usage: {{< multilingual >}} content {{< /multilingual >}}
+This wrapper ensures proper processing of nested language-specific shortcodes
+*/}}
+{{ .Inner | safeHTML }}

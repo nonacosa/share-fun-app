@@ -1,0 +1,15 @@
+<div class="lg:sticky lg:top-8">
+
+	<div class="space-y-6">
+
+		<h2 class="font-bold text-xl mb-8">Recent Posts</h2>
+
+		{{ range where .Site.RegularPages "Type" "posts" | first 5}}
+
+			{{- partial "content/list-post.html" . -}}
+
+		{{ end }}
+		
+	</div>
+
+</div>

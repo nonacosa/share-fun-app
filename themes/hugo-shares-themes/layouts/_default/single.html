@@ -1,0 +1,148 @@
+{{ define "main" }}
+{{- partial "content/breadcrumb.html" . -}}
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
+
+  <article data-pagefind-body class="md:col-span-2 prose lg:prose-lg">
+
+    <header class="not-prose">
+      
+      <h1 id="title" class="text-4xl font-bold leading-normal">
+        {{- if .Params.title }}
+          {{- if reflect.IsMap .Params.title }}
+            {{- index .Params.title .Site.Language.Lang | default .Title }}
+          {{- else }}
+            {{- .Params.title }}
+          {{- end }}
+        {{- else }}
+          {{- .Title }}
+        {{- end }}
+      </h1>
+
+      <div id="lead" class="my-6">
+        <p class="font-bold">
+          {{- if .Params.description }}
+            {{- if reflect.IsMap .Params.description }}
+              {{- index .Params.description .Site.Language.Lang }}
+            {{- else }}
+              {{- .Params.description }}
+            {{- end }}
+          {{- end }} 
+        </p>
+      </div>
+      
+      <div id="writer" class="flex items-center space-x-4">
+
+        {{- $name := .Site.Params.Author.name -}}
+
+        {{- with $avatar := resources.Get .Site.Params.Author.avatar }}
+
+        <img class="w-12 h-12 bg-black rounded-full" src="{{ $avatar.Permalink }}" alt="{{ $name }} avatar" width="{{ $avatar.Width }}" height="{{ $avatar.Height }}">
+
+        {{ end -}}
+        
+        <ul class="flex items-center space-x-4 flex-nowrap whitespace-nowrap overflow-x-auto">
+          
+          <li class="font-semibold my-2">{{ .Site.Params.Author.name }}</li>
+          
+          <li class="before:content-['•'] before:mr-2 before:opacity-50 my-2">
+            {{- $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" -}}
+            {{- $dateHuman := .Date | time.Format ":date_long" -}}
+            <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+          </li>
+
+          <li class="before:content-['•'] before:mr-2 before:opacity-50 my-2">
+            {{ .ReadingTime }} min read
+          </li>
+
+        </ul>
+
+      </div>
+      
+    </header>
+
+    <figure id="featureimage" class="rounded-xl aspect-video">
+
+      {{- if .Params.image }}
+
+        {{- if ( strings.HasPrefix .Params.image "http" ) }}
+
+          <img class="rounded-lg" src="{{ .Params.image }}" alt="{{ .Params.title }}">
+
+        {{- else }}
+
+          {{- with $image := .Resources.Get .Params.image }}
+            {{- $image := $image.Resize "750x" }}
+            <img class="rounded-lg" src="{{ $image.Permalink }}" alt="{{ .Params.title }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+          {{- end }}
+
+        {{- end }}
+
+      {{- end }}
+
+      {{- if ( isset .Params "caption" ) }}
+        <figcaption class="text-center italic text-xs">{{ .Params.caption }}</figcaption>
+      {{- end }}
+
+    </figure>
+
+    <div id="content" class="mb-14">
+      <!-- Content -->
+
+      {{- .Content -}}
+
+      <!-- Tags list -->
+
+      {{- partial "terms.html" (dict "taxonomy" "tags" "page" .) -}}
+
+      <!-- Related Posts -->
+      {{- partial "content/related-posts.html" . -}}
+
+    </div>
+
+    <footer id="content-footer" class="not-prose">
+
+      <div id="author-box" class="my-8 md:my-14 border p-8 bg-zinc-100 rounded-2xl">
+
+        <img class="w-20 h-20 rounded-full" src="{{ .Site.Params.Author.avatar }}" alt="{{ .Site.Params.Author.name }}">
+
+        <h2 class="text-xl font-bold my-4">Written by : {{ .Site.Params.Author.name }}</h2>
+
+        <p class="mb-4">{{ .Site.Params.Author.bio }}</p>
+
+        <ul class="flex flex-wrap space-x-4">
+          <li>
+            <a class="flex items-center decoration-auto hover:underline" href="{{ .Site.Params.Author.github }}" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+              <span class="ml-2">GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a class="flex items-center decoration-auto hover:underline" href="{{ .Site.Params.Author.x }}" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+              </svg>	
+              <span class="ml-2">Twitter</span>
+            </a>
+          </li>
+
+        </ul>
+        
+      </div>
+
+    </footer>
+
+  </article>
+
+  <!-- Aside -->
+  <aside class="md:col-span-1">
+
+    {{- partial "content/aside.html" . -}}
+    
+  </aside>
+
+</div>
+  
+{{ end }}

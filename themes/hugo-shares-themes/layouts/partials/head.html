@@ -1,0 +1,112 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Dynamic title for SEO -->
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ $pageTitle := .Title }}{{ if .Params.title }}{{ if reflect.IsMap .Params.title }}{{ $pageTitle = index .Params.title .Site.Language.Lang | default .Title }}{{ else }}{{ $pageTitle = .Params.title }}{{ end }}{{ end }}{{ printf "%s | %s" $pageTitle .Site.Title }}{{ end }}</title>
+
+<!-- Dynamic description for SEO -->
+<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else if .Params.description }}{{ if reflect.IsMap .Params.description }}{{ index .Params.description .Site.Language.Lang }}{{ else }}{{ .Params.description }}{{ end }}{{ else }}{{ .Summary }}{{ end }}">
+
+<!-- Keywords for SEO -->
+{{ if .Site.Params.keywords }}
+<meta name="keywords" content="{{ delimit .Site.Params.keywords ", " }}{{ if .Params.tags }}, {{ delimit .Params.tags ", " }}{{ end }}">
+{{ else if .Params.keywords }}
+<meta name="keywords" content="{{ delimit .Params.keywords ", " }}{{ if .Params.tags }}, {{ delimit .Params.tags ", " }}{{ end }}">
+{{ else if .Params.tags }}
+<meta name="keywords" content="{{ delimit .Params.tags ", " }}">
+{{ end }}
+
+<!-- Additional SEO meta tags -->
+<meta name="author" content="{{ .Site.Params.author.name | default (.Site.BaseURL | replaceRE "^https?://(www\\.)?" "" | replaceRE "/$" "") }}">
+<meta name="robots" content="index, follow">
+{{ if .IsPage }}
+<meta name="article:author" content="{{ .Params.author | default .Site.Params.author.name | default (.Site.BaseURL | replaceRE "^https?://(www\\.)?" "" | replaceRE "/$" "") }}">
+{{ if .PublishDate }}<meta name="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
+{{ if .Lastmod }}<meta name="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
+{{ end }}
+
+{{- partialCached "head/css.html" . -}}
+{{- partialCached "head/favicon.html" . -}}
+{{- partial "schema.html" . -}}
+
+{{/* Open Graph & Twitter Card */}}
+{{ $title := .Title | default .Site.Title }}
+{{ $description := .Description | default .Params.description | default .Summary }}
+{{ $url := .Permalink }}
+{{ $image := "" }}
+{{ $site_url := .Site.BaseURL }}
+
+{{/* Image handling with multiple fallback options */}}
+{{ if .Params.images }}
+  {{/* Support images array - use first image */}}
+  {{ $firstImage := index .Params.images 0 }}
+  {{ if not (strings.HasPrefix $firstImage "http") }}
+    {{- $basePath := .RelPermalink -}}
+    {{- if eq .Site.Language.Lang "en" -}}
+      {{- $basePath = strings.TrimPrefix "/en" .RelPermalink -}}
+    {{- end -}}
+    {{- $relativeImagePath := printf "%s%s" $basePath $firstImage }}
+    {{ $image = printf "%s%s" .Site.BaseURL $relativeImagePath }}
+  {{ else }}
+    {{ $image = $firstImage }}
+  {{ end }}
+{{ else if .Params.image }}
+  {{/* Support single image parameter */}}
+  {{ if not (strings.HasPrefix .Params.image "http") }}
+    {{- $basePath := .RelPermalink -}}
+    {{- if eq .Site.Language.Lang "en" -}}
+      {{- $basePath = strings.TrimPrefix "/en" .RelPermalink -}}
+    {{- end -}}
+    {{- $relativeImagePath := printf "%s%s" $basePath .Params.image }}
+    {{ $image = printf "%s%s" .Site.BaseURL $relativeImagePath }}
+  {{ else }}
+    {{ $image = .Params.image }}
+  {{ end }}
+{{ else if .Params.cover }}
+  {{/* Support cover parameter */}}
+  {{ if not (strings.HasPrefix .Params.cover "http") }}
+    {{- $basePath := .RelPermalink -}}
+    {{- if eq .Site.Language.Lang "en" -}}
+      {{- $basePath = strings.TrimPrefix "/en" .RelPermalink -}}
+    {{- end -}}
+    {{- $relativeImagePath := printf "%s%s" $basePath .Params.cover }}
+    {{ $image = printf "%s%s" .Site.BaseURL $relativeImagePath }}
+  {{ else }}
+    {{ $image = .Params.cover }}
+  {{ end }}
+{{ else if .Site.Params.defaultImage }}
+  {{/* Fallback to site default */}}
+  {{ if not (strings.HasPrefix .Site.Params.defaultImage "http") }}
+    {{ $image = printf "%s%s" $site_url .Site.Params.defaultImage }}
+  {{ else }}
+    {{ $image = .Site.Params.defaultImage }}
+  {{ end }}
+{{ end }}
+
+<!-- Open Graph -->
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ $url }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+{{ if $image }}<meta property="og:image" content="{{ $image }}">{{ end }}
+{{ if .IsPage }}
+  <meta property="article:author" content="{{ .Params.author | default .Site.Params.author.name }}">
+  {{ with .Params.tags }}
+    {{ range . }}
+      <meta property="article:tag" content="{{ . }}">
+    {{ end }}
+  {{ end }}
+  {{ if .PublishDate }}<meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
+  {{ if .Lastmod }}<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
+{{ end }}
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+{{ if $image }}<meta name="twitter:image" content="{{ $image }}">{{ end }}
+{{ if .Site.Params.author.x }}<meta name="twitter:site" content="{{ .Site.Params.author.x }}">{{ end }}
+{{ if .Site.Params.author.x }}<meta name="twitter:creator" content="{{ .Site.Params.author.x }}">{{ end }}
+
+{{- /* template "_internal/google_analytics.html" . */ -}}

@@ -1,0 +1,79 @@
+{{ $related := .Site.RegularPages.Related . | first 3 }}
+{{ $sameTags := where .Site.RegularPages ".Params.tags" "intersect" .Params.tags }}
+{{ $sameCategory := where .Site.RegularPages ".Type" .Type }}
+
+{{ if gt (len $related) 0 }}
+<section class="mt-12 pt-8 border-t">
+  <h3 class="text-2xl font-bold mb-6">{{ i18n "related-posts" }}</h3>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {{ range $related }}
+    <article class="group bg-zinc-50 hover:bg-blue-50 rounded-2xl overflow-hidden transition-all duration-300">
+      <a href="{{ .Permalink }}" class="block">
+        {{ if .Params.image }}
+        <div class="aspect-video overflow-hidden">
+          {{- $basePath := .RelPermalink -}}
+          {{- if eq .Site.Language.Lang "en" -}}
+            {{- $basePath = strings.TrimPrefix "/en" .RelPermalink -}}
+          {{- end -}}
+          {{- $imagePath := printf "%s%s" $basePath .Params.image }}
+          <img src="{{ $imagePath }}" alt="{{ .Title }}" 
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+               loading="lazy">
+        </div>
+        {{ end }}
+        <div class="p-4">
+          <h4 class="font-semibold text-lg group-hover:text-blue-600 transition-colors line-clamp-2">{{ .Title }}</h4>
+          {{ if .Params.tags }}
+          <div class="flex flex-wrap gap-1 mt-2">
+            {{ range first 3 .Params.tags }}
+            <span class="text-xs bg-zinc-200 text-zinc-700 px-2 py-1 rounded">{{ . }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
+          <time class="text-sm text-zinc-500 mt-2 block" datetime="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">
+            {{ .PublishDate.Format "Jan 2, 2006" }}
+          </time>
+        </div>
+      </a>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ else if gt (len $sameTags) 1 }}
+<section class="mt-12 pt-8 border-t">
+  <h3 class="text-2xl font-bold mb-6">{{ i18n "similar-tags-posts" }}</h3>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {{ range first 3 (where $sameTags "Title" "!=" .Title) }}
+    <article class="group bg-zinc-50 hover:bg-blue-50 rounded-2xl overflow-hidden transition-all duration-300">
+      <a href="{{ .Permalink }}" class="block">
+        {{ if .Params.image }}
+        <div class="aspect-video overflow-hidden">
+          {{- $basePath := .RelPermalink -}}
+          {{- if eq .Site.Language.Lang "en" -}}
+            {{- $basePath = strings.TrimPrefix "/en" .RelPermalink -}}
+          {{- end -}}
+          {{- $imagePath := printf "%s%s" $basePath .Params.image }}
+          <img src="{{ $imagePath }}" alt="{{ .Title }}" 
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+               loading="lazy">
+        </div>
+        {{ end }}
+        <div class="p-4">
+          <h4 class="font-semibold text-lg group-hover:text-blue-600 transition-colors line-clamp-2">{{ .Title }}</h4>
+          {{ if .Params.tags }}
+          <div class="flex flex-wrap gap-1 mt-2">
+            {{ range first 3 .Params.tags }}
+            <span class="text-xs bg-zinc-200 text-zinc-700 px-2 py-1 rounded">{{ . }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
+          <time class="text-sm text-zinc-500 mt-2 block" datetime="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">
+            {{ .PublishDate.Format "Jan 2, 2006" }}
+          </time>
+        </div>
+      </a>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
