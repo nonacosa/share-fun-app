@@ -24,8 +24,29 @@
             </div>
         </div>
 
-        <div class="w-1/4 h-full rounded-r overflow-hidden">
-            <img src="{{ .Get "image" }}" class="object-cover w-full h-full" alt="" loading="lazy">
+        <div class="w-1/4 h-full rounded-r overflow-hidden bg-gray-100 flex items-center justify-center relative">
+            {{ if .Get "image" }}
+                <img 
+                    src="{{ .Get "image" }}" 
+                    class="object-cover w-full h-full absolute inset-0" 
+                    alt=""
+                    loading="lazy"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                >
+                <!-- 图片加载失败时的优雅降级 -->
+                <div class="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center text-gray-400" style="display: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm2 0v14h14V5H5zm11.5 4a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM5 15l3-3 2 2 4-4 5 5v2H5v-2z"/>
+                    </svg>
+                </div>
+            {{ else }}
+                <!-- 没有图片时的默认占位 -->
+                <div class="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13 9h5.5L13 3.5V9zM6 2h8l6 6v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2zm0 18h12V9h-6V3H6v17z"/>
+                    </svg>
+                </div>
+            {{ end }}
         </div>
     </article>
 </a>
