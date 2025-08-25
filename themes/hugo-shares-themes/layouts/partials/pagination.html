@@ -1,13 +1,13 @@
-{{/* 分页组件 - 使用 DaisyUI 样式 */}}
+{{/* 分页组件 - 使用 DaisyUI radio input 样式 */}}
 {{ $paginator := .paginator }}
 {{ if gt $paginator.TotalPages 1 }}
 <div class="flex justify-center mt-10">
   <div class="join">
     {{/* 上一页按钮 */}}
     {{ if $paginator.HasPrev }}
-      <a href="{{ $paginator.Prev.URL }}" class="join-item btn">‹</a>
+      <a href="{{ $paginator.Prev.URL }}" class="join-item btn btn-square">‹</a>
     {{ else }}
-      <button class="join-item btn btn-disabled">‹</button>
+      <button class="join-item btn btn-square btn-disabled">‹</button>
     {{ end }}
     
     {{/* 计算显示的页码范围 */}}
@@ -37,9 +37,13 @@
     
     {{/* 显示第一页（如果需要） */}}
     {{ if gt $startPage 1 }}
-      <a href="{{ $paginator.First.URL }}" class="join-item btn">1</a>
+      {{ if eq 1 $currentPage }}
+        <input class="join-item btn btn-square" type="radio" name="pagination" aria-label="1" checked="checked" disabled />
+      {{ else }}
+        <a href="{{ $paginator.First.URL }}" class="join-item btn btn-square" aria-label="第1页">1</a>
+      {{ end }}
       {{ if gt $startPage 2 }}
-        <button class="join-item btn btn-disabled">…</button>
+        <button class="join-item btn btn-square btn-disabled">…</button>
       {{ end }}
     {{ end }}
     
@@ -47,9 +51,9 @@
     {{ range $paginator.Pagers }}
       {{ if and (ge .PageNumber $startPage) (le .PageNumber $endPage) }}
         {{ if eq .PageNumber $currentPage }}
-          <button class="join-item btn btn-active">{{ .PageNumber }}</button>
+          <input class="join-item btn btn-square" type="radio" name="pagination" aria-label="{{ .PageNumber }}" checked="checked" disabled />
         {{ else }}
-          <a href="{{ .URL }}" class="join-item btn">{{ .PageNumber }}</a>
+          <a href="{{ .URL }}" class="join-item btn btn-square" aria-label="第{{ .PageNumber }}页">{{ .PageNumber }}</a>
         {{ end }}
       {{ end }}
     {{ end }}
@@ -57,16 +61,20 @@
     {{/* 显示最后一页（如果需要） */}}
     {{ if lt $endPage $totalPages }}
       {{ if lt $endPage (sub $totalPages 1) }}
-        <button class="join-item btn btn-disabled">…</button>
+        <button class="join-item btn btn-square btn-disabled">…</button>
       {{ end }}
-      <a href="{{ $paginator.Last.URL }}" class="join-item btn">{{ $totalPages }}</a>
+      {{ if eq $totalPages $currentPage }}
+        <input class="join-item btn btn-square" type="radio" name="pagination" aria-label="{{ $totalPages }}" checked="checked" disabled />
+      {{ else }}
+        <a href="{{ $paginator.Last.URL }}" class="join-item btn btn-square" aria-label="第{{ $totalPages }}页">{{ $totalPages }}</a>
+      {{ end }}
     {{ end }}
     
     {{/* 下一页按钮 */}}
     {{ if $paginator.HasNext }}
-      <a href="{{ $paginator.Next.URL }}" class="join-item btn">›</a>
+      <a href="{{ $paginator.Next.URL }}" class="join-item btn btn-square">›</a>
     {{ else }}
-      <button class="join-item btn btn-disabled">›</button>
+      <button class="join-item btn btn-square btn-disabled">›</button>
     {{ end }}
   </div>
 </div>
