@@ -19,20 +19,20 @@ keywords:
     - Next.js
     - 响应式设计
     - 组件库
-lastMod: "2025-08-25T11:03:00Z"
+lastMod: "2025-08-25T11:20:00Z"
 metaDescription: ""
 metaTitle: ""
 position: content/posts/2025
 showComments: false
 slug: tailwindcss-plus-604652
-status: Pre
+status: RePublish
 tags:
     - 前端
     - UI
     - 组件库
     - 设计
     - 工具
-title: 'Tailwind Plus: UI组件宝库'
+title: 'Tailwind Plus: 官方UI组件'
 url: ""
 weight: 1
 ---
