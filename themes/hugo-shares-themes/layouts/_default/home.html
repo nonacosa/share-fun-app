@@ -133,16 +133,7 @@ function toggleTagsVisibility() {
     </div>
 
     <!-- Paginate here -->
-
-    <div class="flex items-center mt-10">
-      {{- if $paginator.HasPrev -}}
-        <a class="border rounded-full px-6 py-2 hover:bg-zinc-200 mr-auto" href="{{ $paginator.Prev.URL }}">← Previous</a>
-      {{- end -}}
-
-      {{- if $paginator.HasNext -}}
-        <a class="border rounded-full px-6 py-2 hover:bg-zinc-200" href="{{ $paginator.Next.URL }}">Next →</a>
-      {{- end -}}
-    </div>
+    {{- partial "pagination.html" (dict "paginator" $paginator) -}}
 
   </section>
 
