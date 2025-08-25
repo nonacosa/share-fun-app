@@ -60,7 +60,7 @@
 <!-- Tags section -->
 <section class="mb-8">
   <div class="relative">
-    <div id="tagsContainer" class="flex flex-wrap gap-3 overflow-hidden transition-all duration-300" style="max-height: 3rem;">
+    <div id="tagsContainer" class="flex flex-wrap gap-2 overflow-hidden transition-all duration-300" style="max-height: 2.5rem;">
       {{ $tags := slice }}
       {{ range $name, $weightedPages := .Site.Taxonomies.tags }}
         {{ $count := len $weightedPages.Pages }}
@@ -71,18 +71,18 @@
 
       {{ range $tags }}
         <a href="{{ "/tags/" | relLangURL }}{{ .name | urlize }}" 
-           class="btn">
+           class="inline-flex items-center rounded-full bg-zinc-100 px-3 py-1.5 text-sm font-medium text-gray-700 transition-all duration-200 hover:bg-zinc-200 hover:scale-105 hover:text-gray-900">
           {{ .name }}
-          <div class="badge badge-sm">{{ .count }}</div>
+          <span class="ml-1.5 rounded-full bg-white px-1.5 py-0.5 text-xs font-semibold text-gray-600">{{ .count }}</span>
         </a>
       {{ end }}
     </div>
     
     <!-- Expand/Collapse button - positioned absolutely -->
     <button id="toggleTags" 
-            class="absolute top-0 right-0 btn"
+            class="absolute top-0 right-0 inline-flex items-center rounded-full bg-zinc-100 p-2 text-gray-700 transition-all duration-200 hover:bg-zinc-200 hover:scale-105"
             onclick="toggleTagsVisibility()">
-      <svg id="expandIcon" class="w-4 h-4 transition-transform duration-200 text-gray-700" fill="currentColor" viewBox="0 0 16 16">
+      <svg id="expandIcon" class="w-4 h-4 transition-transform duration-200" fill="currentColor" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
       </svg>
     </button>
