@@ -29,7 +29,7 @@
 		{{- end }}
 		<div class="absolute inset-0 rounded-t-2xl inset-ring inset-ring-gray-900/10 dark:inset-ring-white/10"></div>
 	</div>
-	<div class="flex max-w-xl grow flex-col justify-between p-6 w-full">
+	<div class="flex max-w-xl grow flex-col justify-between p-6 w-full bg-white">
 		<div class="flex items-center gap-x-4 text-xs mb-4">
 			<time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}" class="text-gray-500 dark:text-gray-400">{{ .Date.Format "Jan 02, 2006" }}</time>
 			{{ if .Params.categories }}
