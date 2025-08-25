@@ -1,7 +1,9 @@
 <article class="group relative flex flex-col overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-gray-200 transition-all duration-300 hover:shadow-xl hover:ring-gray-300">
+	<!-- 全局链接 - 整个卡片都可点击 -->
+	<a href="{{ .Permalink }}" class="absolute inset-0 z-10"></a>
+	
 	<!-- 图片区域 - 更大的比例 -->
 	<div class="relative aspect-[4/3] w-full overflow-hidden">
-		<a href="{{ .Permalink }}" class="absolute inset-0 z-10"></a>
 		{{- if .Params.image }}
 		  {{- if (strings.HasPrefix .Params.image "http") }}
 			<img src="{{ .Params.image }}" alt="{{ .Title }}" 
@@ -34,7 +36,8 @@
 			{{ range first 1 .Params.categories }}
 				<div class="absolute right-4 top-4">
 					<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" 
-					   class="relative z-20 inline-flex items-center rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-gray-700 backdrop-blur-sm transition-all duration-200 hover:bg-white hover:scale-105">
+					   class="relative z-20 inline-flex items-center rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-gray-700 backdrop-blur-sm transition-all duration-200 hover:bg-white hover:scale-105"
+					   onclick="event.stopPropagation()">
 						{{ . }}
 					</a>
 				</div>
@@ -42,31 +45,31 @@
 		{{ end }}
 	</div>
 	
-	<!-- 内容区域 - 更自然的文字布局 -->
-	<div class="flex flex-1 flex-col justify-between p-6 lg:p-8">
+	<!-- 内容区域 - 紧凑的高度 -->
+	<div class="flex flex-col p-4 lg:p-5">
 		<!-- 标题和描述 -->
-		<div class="flex-1">
-			<h3 class="mb-3 text-xl font-bold leading-tight text-gray-900 transition-colors duration-200 group-hover:text-blue-600 lg:text-2xl">
+		<div class="mb-3">
+			<h3 class="mb-2 text-lg font-bold leading-tight text-gray-900 transition-colors duration-200 group-hover:text-blue-600 lg:text-xl">
 				{{ .LinkTitle }}
 			</h3>
 			{{ if .Params.description }}
-				<p class="mb-4 line-clamp-3 text-base leading-relaxed text-gray-600 lg:text-lg">
+				<p class="line-clamp-2 text-sm leading-relaxed text-gray-600 lg:text-base">
 					{{ .Params.description }}
 				</p>
 			{{ end }}
 		</div>
 		
 		<!-- 底部信息 -->
-		<div class="flex items-center justify-between pt-4 mt-auto border-t border-gray-100">
+		<div class="flex items-center justify-between pt-2 border-t border-gray-100">
 			<time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}" 
-				  class="text-sm font-medium text-gray-500">
+				  class="text-xs font-medium text-gray-500 lg:text-sm">
 				{{ .Date.Format "Jan 02, 2006" }}
 			</time>
 			
 			<!-- 阅读更多箭头 -->
 			<div class="flex items-center text-blue-600 transition-transform duration-200 group-hover:translate-x-1">
-				<span class="text-sm font-medium mr-1">Read more</span>
-				<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+				<span class="text-xs font-medium mr-1 lg:text-sm">Read more</span>
+				<svg class="h-3 w-3 lg:h-4 lg:w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
 				</svg>
 			</div>
