@@ -1,45 +1,54 @@
-<article class="relative group bg-zinc-100 hover:bg-blue-100 rounded-3xl">
+<article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 aspect-[16/10] px-6 py-8 dark:bg-gray-800 group hover:scale-[1.02] transition-all duration-300">
 	
-	<a class="insert-link" href="{{ .Permalink }}"></a>
+	<a class="absolute inset-0 z-20" href="{{ .Permalink }}"></a>
 
-	<figure class="w-full aspect-video overflow-hidden rounded-3xl">
+	{{- if .Params.image }}
 
-		{{- if .Params.image }}
+	  {{- if (strings.HasPrefix .Params.image "http") }}
 
-		  {{- if (strings.HasPrefix .Params.image "http") }}
+		<img class="absolute inset-0 -z-10 size-full object-cover group-hover:scale-110 transition-transform duration-500" src="{{ .Params.image }}" alt="{{ $.Name }}">
 
-			<img class="object-cover group-hover:scale-105 transition duration-500 cursor-pointer" src="{{ .Params.image }}" alt="{{ $.Name }}" style="width: 100%; height: 100%; object-fit: cover;">
+	  {{- else }}
 
-		  {{- else }}
-
-			{{- with $imgcard := .Resources.GetMatch .Params.image -}}
-			  {{- $imgcard := $imgcard.Process "resize 750x" -}}
-			  <img class="object-cover group-hover:scale-105 transition duration-500 cursor-pointer" src="{{ $imgcard.Permalink }}" alt="{{ $.Name }}" width="{{ $imgcard.Width }}" height="{{ $imgcard.Height }}">
-			{{- else }}
-			  {{/* Fallback: construct language-neutral relative image path */}}
-			  {{- $basePath := .RelPermalink -}}
-			  {{- if eq .Site.Language.Lang "en" -}}
-			    {{- $basePath = strings.TrimPrefix "/en" .RelPermalink -}}
-			  {{- end -}}
-			  {{- $imagePath := printf "%s%s" $basePath .Params.image }}
-			  <img class="object-cover group-hover:scale-105 transition duration-500 cursor-pointer" src="{{ $imagePath }}" alt="{{ $.Name }}" style="width: 100%; height: 100%; object-fit: cover;">
-			{{- end }}
-
-			
-
-		  {{- end }}
-
+		{{- with $imgcard := .Resources.GetMatch .Params.image -}}
+		  {{- $imgcard := $imgcard.Process "resize 750x" -}}
+		  <img class="absolute inset-0 -z-10 size-full object-cover group-hover:scale-110 transition-transform duration-500" src="{{ $imgcard.Permalink }}" alt="{{ $.Name }}">
+		{{- else }}
+		  {{/* Fallback: construct language-neutral relative image path */}}
+		  {{- $basePath := .RelPermalink -}}
+		  {{- if eq .Site.Language.Lang "en" -}}
+		    {{- $basePath = strings.TrimPrefix "/en" .RelPermalink -}}
+		  {{- end -}}
+		  {{- $imagePath := printf "%s%s" $basePath .Params.image }}
+		  <img class="absolute inset-0 -z-10 size-full object-cover group-hover:scale-110 transition-transform duration-500" src="{{ $imagePath }}" alt="{{ $.Name }}">
 		{{- end }}
 
-	  </figure>
+	  {{- end }}
 
-	<div class="p-6">
+	{{- end }}
 
-		<time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}">{{ .Date.Format "Jan 02, 2006" }}</time>
+	<!-- Gradient overlay -->
+	<div class="absolute inset-0 -z-10 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+	<div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-white/10"></div>
 
-		<h3 class="my-4 text-2xl font-bold">{{ .LinkTitle }}</h3>
-
-		<p class="text-normal leading-normal text-zinc-500 line-clamp-2">{{ .Params.description }}</p>
-
+	<!-- Content overlay -->
+	<div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm text-white/80">
+		<time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}" class="mr-6 font-medium">{{ .Date.Format "Jan 02, 2006" }}</time>
+		<div class="flex items-center gap-x-3">
+			<div class="w-1 h-1 bg-white/50 rounded-full"></div>
+			<div class="flex items-center gap-x-2">
+				{{ if .Site.Params.author.avatar }}
+				<img src="{{ .Site.Params.author.avatar }}" alt="{{ .Site.Params.author.name }}" class="w-5 h-5 rounded-full border border-white/20" />
+				{{ end }}
+				<span class="font-medium">{{ .Site.Params.author.name | default "FindSoFun" }}</span>
+			</div>
+		</div>
 	</div>
+	<h3 class="mt-3 text-xl font-bold text-white leading-tight line-clamp-2">
+		<span class="absolute inset-0 z-10"></span>
+		{{ .LinkTitle }}
+	</h3>
+	{{ if .Params.description }}
+	<p class="mt-2 text-sm text-white/70 line-clamp-2 leading-relaxed">{{ .Params.description }}</p>
+	{{ end }}
 </article>

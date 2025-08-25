@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["content/**/*.md", "./themes/pehtheme-simple-hugo/**/*.{html,js}"],
+  content: [
+    "content/**/*.md", 
+    "./themes/pehtheme-simple-hugo/**/*.{html,js}",
+    "./themes/hugo-shares-themes/**/*.{html,js}"
+  ],
   theme: {
     extend: {
       animation: {
