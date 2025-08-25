@@ -58,7 +58,7 @@
 <!-- / End feature post  -->
 
 <!-- Tags section -->
-<section class="mb-8">
+<section class="mt-4">
   <div class="relative">
     <div id="tagsContainer" class="flex flex-wrap gap-2 overflow-hidden transition-all duration-300" style="max-height: 2.5rem;">
       {{ $tags := slice }}
@@ -97,11 +97,11 @@ function toggleTagsVisibility() {
   const container = document.getElementById('tagsContainer');
   const icon = document.getElementById('expandIcon');
   
-  if (container.style.maxHeight === '3rem') {
+  if (container.style.maxHeight === '2.5rem' || container.style.maxHeight === '') {
     container.style.maxHeight = 'none';
     icon.style.transform = 'rotate(180deg)';
   } else {
-    container.style.maxHeight = '3rem';
+    container.style.maxHeight = '2.5rem';
     icon.style.transform = 'rotate(0deg)';
   }
 }
