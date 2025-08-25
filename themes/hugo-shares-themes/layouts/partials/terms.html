@@ -34,11 +34,11 @@ Supports internationalized display for tags.
           {{- end }}
         {{- end }}
         <li>
-          <a href="{{ $tagURL }}" class="inline-flex items-center gap-x-1.5 rounded-full px-2 py-1 text-xs font-medium text-gray-900 inset-ring inset-ring-gray-200 hover:bg-gray-50 transition-colors">
+          <a href="{{ $tagURL }}" class="inline-flex items-center gap-x-1.5 rounded-full px-3 py-1.5 text-sm font-medium text-gray-900 inset-ring inset-ring-gray-200 hover:bg-gray-50 transition-colors">
             {{- $colors := slice "red-500" "yellow-500" "green-500" "blue-500" "indigo-500" "purple-500" "pink-500" "orange-500" "teal-500" "cyan-500" }}
             {{- $randomIndex := mod (len (printf "%s%s" $tagURL $localizedTag)) (len $colors) }}
             {{- $randomColor := index $colors $randomIndex }}
-            <svg viewBox="0 0 6 6" aria-hidden="true" class="size-1.5 fill-{{ $randomColor }}">
+            <svg viewBox="0 0 6 6" aria-hidden="true" class="size-2 fill-{{ $randomColor }}">
               <circle r="3" cx="3" cy="3" />
             </svg>
             {{ $localizedTag }}
@@ -57,11 +57,11 @@ Supports internationalized display for tags.
         <li class="font-semibold my-4">{{ $label }}:</li>
         {{- range . }}
           <li>
-            <a href="{{ .RelPermalink }}" class="inline-flex items-center gap-x-1.5 rounded-full px-2 py-1 text-xs font-medium text-gray-900 inset-ring inset-ring-gray-200 hover:bg-gray-50 transition-colors">
+            <a href="{{ .RelPermalink }}" class="inline-flex items-center gap-x-1.5 rounded-full px-3 py-1.5 text-sm font-medium text-gray-900 inset-ring inset-ring-gray-200 hover:bg-gray-50 transition-colors">
               {{- $colors := slice "red-500" "yellow-500" "green-500" "blue-500" "indigo-500" "purple-500" "pink-500" "orange-500" "teal-500" "cyan-500" }}
               {{- $randomIndex := mod (len (printf "%s%s" .RelPermalink .LinkTitle)) (len $colors) }}
               {{- $randomColor := index $colors $randomIndex }}
-              <svg viewBox="0 0 6 6" aria-hidden="true" class="size-1.5 fill-{{ $randomColor }}">
+              <svg viewBox="0 0 6 6" aria-hidden="true" class="size-2 fill-{{ $randomColor }}">
                 <circle r="3" cx="3" cy="3" />
               </svg>
               {{ .LinkTitle }}
