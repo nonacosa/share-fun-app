@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="grid min-h-full place-items-center py-24 sm:py-32">
+  <div class="text-center">
+    <p class="text-base font-semibold text-blue-600">404</p>
+    <h1 class="mt-4 text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">
+      {{ if eq site.Language.Lang "zh-cn" }}
+        页面未找到
+      {{ else }}
+        Page not found
+      {{ end }}
+    </h1>
+    <p class="mt-6 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
+      {{ if eq site.Language.Lang "zh-cn" }}
+        抱歉，我们无法找到您要访问的页面。
+      {{ else }}
+        Sorry, we couldn't find the page you're looking for.
+      {{ end }}
+    </p>
+    <div class="mt-10 flex items-center justify-center gap-x-6">
+      <a href="{{ "/" | absLangURL }}" class="rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-colors duration-200">
+        {{ if eq site.Language.Lang "zh-cn" }}
+          返回首页
+        {{ else }}
+          Go back home
+        {{ end }}
+      </a>
+      <a href="mailto:{{ site.Params.author.email | default "support@findsofun.com" }}" class="text-sm font-semibold text-gray-900 hover:text-gray-700 transition-colors duration-200">
+        {{ if eq site.Language.Lang "zh-cn" }}
+          联系我们 <span aria-hidden="true">&rarr;</span>
+        {{ else }}
+          Contact support <span aria-hidden="true">&rarr;</span>
+        {{ end }}
+      </a>
+    </div>
+  </div>
+</div>
+{{ end }}
