@@ -9,13 +9,13 @@ summaryLength = 20
   [languages.zh-cn]
     languageCode = 'zh-CN'
     languageName = '中文'
-    title = "FindSoFun - 发现有趣AI工具与前端组件库"
+    title = "FindSoFun - 发现有趣工具"
     weight = 1
 
   [languages.en]
     languageCode = 'en-US'
     languageName = 'English'
-    title = "FindSoFun - Discover Interesting AI Tools & Frontend Libraries"
+    title = "FindSoFun - Discover Cool Tools"
     weight = 2
 
 [languages.zh-cn.params]

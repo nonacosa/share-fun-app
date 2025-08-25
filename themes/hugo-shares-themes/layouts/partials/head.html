@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Dynamic title for SEO -->
-<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ $pageTitle := .Title }}{{ if .Params.title }}{{ if reflect.IsMap .Params.title }}{{ $pageTitle = index .Params.title .Site.Language.Lang | default .Title }}{{ else }}{{ $pageTitle = .Params.title }}{{ end }}{{ end }}{{ printf "%s | %s" $pageTitle .Site.Title }}{{ end }}</title>
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ $pageTitle := .Title }}{{ if .Params.title }}{{ if reflect.IsMap .Params.title }}{{ $pageTitle = index .Params.title .Site.Language.Lang | default .Title }}{{ else }}{{ $pageTitle = .Params.title }}{{ end }}{{ end }}{{ if eq .Site.Language.Lang "zh-cn" }}{{ printf "FindSoFun - 「%s」" $pageTitle }}{{ else }}{{ printf "FindSoFun - \"%s\"" $pageTitle }}{{ end }}{{ end }}</title>
 
 <!-- Dynamic description for SEO -->
 <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else if .Params.description }}{{ if reflect.IsMap .Params.description }}{{ index .Params.description .Site.Language.Lang }}{{ else }}{{ .Params.description }}{{ end }}{{ else }}{{ .Summary }}{{ end }}">
