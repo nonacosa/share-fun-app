@@ -2,12 +2,14 @@
 	<nav aria-label="面包屑导航">
 		<ol class="flex space-x-4 text-sm text-zinc-500" itemscope itemtype="https://schema.org/BreadcrumbList">
 			{{- range $index, $item := .Ancestors.Reverse }}
+			{{- if ne .LinkTitle "Posts" }}
 			<li class="after:content-['❯'] after:ml-4 after:opacity-30 last:after:content-none uppercase" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 				<a href="{{ .Permalink }}" itemprop="item">
 					<span itemprop="name">{{ .LinkTitle }}</span>
 				</a>
 				<meta itemprop="position" content="{{ add $index 1 }}">
 			</li>
+			{{- end }}
 			{{- end }}
 			{{- if not .IsHome }}
 			<li class="uppercase" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
