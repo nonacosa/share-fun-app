@@ -71,16 +71,16 @@
 
       {{ range $tags }}
         <a href="{{ "/tags/" | relLangURL }}{{ .name | urlize }}" 
-           class="squishy-tag relative inline-flex items-center gap-1.5 text-sm font-semibold rounded-lg px-3 py-1.5 transition-all duration-300 cursor-pointer flex-shrink-0">
-          <span>{{ .name }}</span>
-          <span class="text-xs bg-white rounded-full px-1.5 py-0.5 font-medium">{{ .count }}</span>
+           class="btn">
+          {{ .name }}
+          <div class="badge badge-sm">{{ .count }}</div>
         </a>
       {{ end }}
     </div>
     
     <!-- Expand/Collapse button - positioned absolutely -->
     <button id="toggleTags" 
-            class="absolute top-0 right-0 squishy-tag relative inline-flex items-center gap-1.5 text-sm font-semibold rounded-lg px-3 py-1.5 transition-all duration-300 cursor-pointer flex-shrink-0 bg-white border-2 border-dashed border-gray-300 hover:border-gray-400"
+            class="absolute top-0 right-0 btn"
             onclick="toggleTagsVisibility()">
       <svg id="expandIcon" class="w-4 h-4 transition-transform duration-200 text-gray-700" fill="currentColor" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>

@@ -5,6 +5,18 @@ module.exports = {
     "./themes/pehtheme-simple-hugo/**/*.{html,js}",
     "./themes/hugo-shares-themes/**/*.{html,js}"
   ],
+  safelist: [
+    'fill-red-500',
+    'fill-yellow-500', 
+    'fill-green-500',
+    'fill-blue-500',
+    'fill-indigo-500',
+    'fill-purple-500',
+    'fill-pink-500',
+    'fill-orange-500',
+    'fill-teal-500',
+    'fill-cyan-500'
+  ],
   theme: {
     extend: {
       animation: {
