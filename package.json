@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "dev:pagefind": "npx -y pagefind --site public --serve",
-    "dev:generate": "npx tailwindcss -i ./assets/input.css -o ./themes/pehtheme-simple-hugo/assets/css/main.css -w",
+    "dev:generate": "npx tailwindcss -i ./assets/input.css -o ./themes/hugo-shares-themes/assets/css/main.css -w",
     "dev:hugo": "hugo server --buildDrafts",
     "dev": "run-p dev:*",
     "build:pagefind": "npx -y pagefind --site public",
-    "build:generate": "npx tailwindcss -i ./assets/input.css -o ./themes/pehtheme-simple-hugo/static/assets/css/main.css --minify",
+    "build:generate": "npx tailwindcss -i ./assets/input.css -o ./themes/hugo-shares-themes/static/assets/css/main.css --minify",
     "build:hugo": "hugo --minify",
     "build": "run-p build:*"
   },
