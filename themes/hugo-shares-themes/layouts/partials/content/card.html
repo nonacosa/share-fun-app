@@ -3,17 +3,17 @@
 	<a href="{{ .Permalink }}" class="absolute inset-0 z-10"></a>
 	
 	<!-- 图片区域 - 更大的比例 -->
-	<div class="relative aspect-[4/3] w-full overflow-hidden">
+	<div class="relative aspect-[4/3] w-full overflow-hidden border-b-2">
 		{{- if .Params.image }}
 		  {{- if (strings.HasPrefix .Params.image "http") }}
 			<img src="{{ .Params.image }}" alt="{{ .Title }}" 
-				 class="h-full w-full object-cover transition-all duration-500 group-hover:scale-105" 
+				 class="h-full w-full object-cover transition-all duration-500 group-hover:scale-105 " 
 				 loading="lazy" />
 		  {{- else }}
 			{{- with $imgcard := .Resources.GetMatch .Params.image -}}
 			  {{- $imgcard := $imgcard.Process "resize 800x" -}}
 			  <img src="{{ $imgcard.Permalink }}" alt="{{ .Title }}" 
-				 class="h-full w-full object-cover transition-all duration-500 group-hover:scale-105" 
+				 class="h-full w-full object-cover transition-all duration-500 group-hover:scale-105 " 
 				 loading="lazy" />
 			{{- else }}
 			  {{- $basePath := .RelPermalink -}}
@@ -22,7 +22,7 @@
 			  {{- end -}}
 			  {{- $imagePath := printf "%s%s" $basePath .Params.image }}
 			  <img src="{{ $imagePath }}" alt="{{ .Title }}" 
-				 class="h-full w-full object-cover transition-all duration-500 group-hover:scale-105" 
+				 class="h-full w-full object-cover transition-all duration-500 group-hover:scale-105 " 
 				 loading="lazy" />
 			{{- end }}
 		  {{- end }}
@@ -46,7 +46,7 @@
 	</div>
 	
 	<!-- 内容区域 - 紧凑的高度 -->
-	<div class="flex flex-col p-4 lg:p-5">
+	<div class="flex flex-col p-2 lg:p-2 ml-4 mt-4">
 		<!-- 标题和描述 -->
 		<div class="mb-3">
 			<h3 class="mb-2 text-lg font-bold leading-tight text-gray-900 transition-colors duration-200 group-hover:text-blue-600 lg:text-xl">
@@ -67,7 +67,7 @@
 			</time>
 			
 			<!-- 阅读更多箭头 -->
-			<div class="flex items-center text-blue-600 transition-transform duration-200 group-hover:translate-x-1">
+			<div class="flex items-center text-gray-700 transition-transform duration-200 group-hover:translate-x-1">
 				<span class="text-xs font-medium mr-1 lg:text-sm">Read more</span>
 				<svg class="h-3 w-3 lg:h-4 lg:w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>

@@ -60,7 +60,7 @@
 <!-- Tags section -->
 <section class="mt-4">
   <div class="relative">
-    <div id="tagsContainer" class="flex flex-wrap gap-2 overflow-hidden transition-all duration-300" style="max-height: 2.5rem;">
+    <div id="tagsContainer" class="flex flex-wrap gap-2 overflow-hidden transition-all duration-300 mr-6" style="max-height: 2.5rem;">
       {{ $tags := slice }}
       {{ range $name, $weightedPages := .Site.Taxonomies.tags }}
         {{ $count := len $weightedPages.Pages }}

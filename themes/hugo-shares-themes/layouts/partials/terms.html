@@ -14,9 +14,9 @@ Supports internationalized display for tags.
 {{- if eq $taxonomy "tags" }}
   {{/* Handle tags with internationalization */}}
   {{- with $page.Params.tags }}
-    <ul id="taxonomy" class="not-prose flex items-center space-x-4 flex-nowrap whitespace-nowrap overflow-x-auto">
+    <ul id="taxonomy" class="not-prose flex items-center gap-4 flex-wrap   ">
 
-      <li class="font-semibold my-4">{{ if eq $page.Site.Language.Lang "zh-cn" }}Tags:{{ else }}Tags:{{ end }}</li>
+      <li class="font-semibold my-4">{{ if eq $page.Site.Language.Lang "zh-cn" }}{{ else }}{{ end }}</li>
       {{- range . }}
         {{- $tagKey := . | replaceRE " " "-" | replaceRE "[^a-zA-Z0-9-]" "" }}
         {{- $localizedTag := i18n $tagKey }}
@@ -34,7 +34,7 @@ Supports internationalized display for tags.
           {{- end }}
         {{- end }}
         <li>
-          <a href="{{ $tagURL }}" class="inline-flex items-center gap-x-1.5 rounded-full px-3 py-1.5 text-sm font-medium text-gray-900 inset-ring inset-ring-gray-200 hover:bg-gray-50 transition-colors">
+          <a href="{{ $tagURL }}" class="inline-flex items-center gap-x-1.5 rounded-full px-3 py-1.5 text-sl font-medium text-gray-900 inset-ring inset-ring-gray-200 hover:bg-gray-50 transition-colors">
             {{- $colors := slice "red-500" "yellow-500" "green-500" "blue-500" "indigo-500" "purple-500" "pink-500" "orange-500" "teal-500" "cyan-500" }}
             {{- $randomIndex := mod (len (printf "%s%s" $tagURL $localizedTag)) (len $colors) }}
             {{- $randomColor := index $colors $randomIndex }}
@@ -52,12 +52,12 @@ Supports internationalized display for tags.
   {{- with $page.GetTerms $taxonomy }}
     {{- $label := (index . 0).Parent.LinkTitle }}
 
-      <ul id="taxonomy" class="not-prose flex items-center space-x-4 flex-nowrap whitespace-nowrap overflow-x-auto">
+      <ul id="taxonomy" class="not-prose flex items-center gap-4 flex-wrap  ">
 
         <li class="font-semibold my-4">{{ $label }}:</li>
         {{- range . }}
           <li>
-            <a href="{{ .RelPermalink }}" class="inline-flex items-center gap-x-1.5 rounded-full px-3 py-1.5 text-sm font-medium text-gray-900 inset-ring inset-ring-gray-200 hover:bg-gray-50 transition-colors">
+            <a href="{{ .RelPermalink }}" class="inline-flex items-center gap-x-1.5 rounded-full px-3 py-1.5 text-sl font-medium text-gray-900 inset-ring inset-ring-gray-200 hover:bg-gray-50 transition-colors">
               {{- $colors := slice "red-500" "yellow-500" "green-500" "blue-500" "indigo-500" "purple-500" "pink-500" "orange-500" "teal-500" "cyan-500" }}
               {{- $randomIndex := mod (len (printf "%s%s" .RelPermalink .LinkTitle)) (len $colors) }}
               {{- $randomColor := index $colors $randomIndex }}

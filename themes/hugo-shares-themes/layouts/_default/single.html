@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{- partial "content/breadcrumb.html" . -}}
 
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14 mt-2">
 
   <article data-pagefind-body class="md:col-span-2 prose lg:prose-lg">
 
@@ -31,31 +31,9 @@
         </p>
       </div>
       
-      <div id="writer" class="flex items-center space-x-4">
+      <div id="writer" class="flex items-center space-x-4 border-t-2 border-b-2">
 
-        {{- $name := .Site.Params.Author.name -}}
-
-        {{- with $avatar := resources.Get .Site.Params.Author.avatar }}
-
-        <img class="w-12 h-12 bg-black rounded-full" src="{{ $avatar.Permalink }}" alt="{{ $name }} avatar" width="{{ $avatar.Width }}" height="{{ $avatar.Height }}">
-
-        {{ end -}}
-        
-        <ul class="flex items-center space-x-4 flex-nowrap whitespace-nowrap overflow-x-auto">
-          
-          <li class="font-semibold my-2">{{ .Site.Params.Author.name }}</li>
-          
-          <li class="before:content-['•'] before:mr-2 before:opacity-50 my-2">
-            {{- $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" -}}
-            {{- $dateHuman := .Date | time.Format ":date_long" -}}
-            <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-          </li>
-
-          <li class="before:content-['•'] before:mr-2 before:opacity-50 my-2">
-            {{ .ReadingTime }} min read
-          </li>
-
-        </ul>
+         {{- partial "terms.html" (dict "taxonomy" "tags" "page" .) -}}
 
       </div>
       
@@ -100,7 +78,7 @@
 
     </div>
 
-    <footer id="content-footer" class="not-prose">
+    <!-- <footer id="content-footer" class="not-prose">
 
       <div id="author-box" class="my-8 md:my-14 border p-8 bg-zinc-100 rounded-2xl">
 
@@ -132,7 +110,7 @@
         
       </div>
 
-    </footer>
+    </footer> -->
 
   </article>
 

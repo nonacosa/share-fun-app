@@ -22,7 +22,7 @@
 
         <!-- 融合 tags partial -->
         {{ with .Params.tags }}
-        <div class="tags flex flex-wrap gap-2 mt-3">
+        <div class="tags  max-w-full flex-wrap gap-2 mt-3">
           {{ range . }}
             <a href="/tags/{{ . | urlize }}/" class="px-2 py-1 rounded bg-gray-200 hover:bg-gray-300 text-sm">
               {{ . }}
