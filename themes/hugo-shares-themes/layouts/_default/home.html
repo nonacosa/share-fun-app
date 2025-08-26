@@ -71,9 +71,9 @@
 
       {{ range $tags }}
         <a href="{{ "/tags/" | relLangURL }}{{ .name | urlize }}" 
-           class="inline-flex items-center py-1 px-2 leading-loose font-semibold rounded bg-gray-300 text-green-800 transition-all duration-200 hover:bg-gray-400 hover:scale-105">
+           class="inline-flex items-center gap-2 py-1 px-2 rounded-lg bg-white text-black border border-black text-sm transition-all duration-200 hover:bg-gray-100 hover:scale-105">
           {{ .name }}
-          <span class="ml-1 inline-flex items-center justify-center w-6 h-4 text-xs text-white bg-gray-700 rounded-full">
+          <span class="flex items-center justify-center w-6 h-6 text-xs text-white bg-gray-700 rounded-full">
             {{ .count }}
           </span>
         </a>
