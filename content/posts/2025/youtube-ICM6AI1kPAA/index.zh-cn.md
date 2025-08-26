@@ -16,19 +16,20 @@ keywords:
     - 侦探故事
     - 英式发音
     - 互动学习
-lastMod: "2025-08-24T14:10:00Z"
+lastMod: "2025-08-26T14:00:00Z"
 metaDescription: ""
 metaTitle: ""
 position: content/posts/2025
 showComments: false
 slug: youtube-ICM6AI1kPAA
-status: Draft
+status: RePublish
 tags:
     - 教育
     - 英语学习
     - 内容创作
     - 新奇
     - 工具
+    - 油管
 title: 'Luke''s Podcast: 侦探故事学英语'
 url: ""
 weight: 1
@@ -47,6 +48,6 @@ weight: 1
 - 纯正英音朗读+字幕支持， 听力口语同步提升
 
 ## 网站链接
-{{< bookmark image="<no value>" icon="https://www.youtube.com/s/desktop/e5522eef/img/logos/favicon_144x144.png" url="https://www.youtube.com/watch?v=ICM6AI1kPAA" title="- YouTube" description="Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube." >}}
+{{< bookmark image="https://yt3.googleusercontent.com/7Pztg8I_KJBkX9XhWnQRQNmulnqCI6KEkSpWX5qYuzZiSoDv4QT7MiEu4XcCQQNBPcrUX1ko=s900-c-k-c0x00ffffff-no-rj" icon="https://www.youtube.com/s/desktop/5565b4e1/img/logos/favicon_144x144.png" url="https://www.youtube.com/watch?v=ICM6AI1kPAA" title="- YouTube" description="Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube." >}}
 {{< /bookmark >}}
 
