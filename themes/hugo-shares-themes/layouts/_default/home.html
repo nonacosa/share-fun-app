@@ -71,12 +71,11 @@
 
       {{ range $tags }}
         <a href="{{ "/tags/" | relLangURL }}{{ .name | urlize }}" 
-           class="inline-flex items-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-medium text-gray-900 ring-1 ring-inset ring-gray-200 bg-white transition-all duration-200 hover:bg-gray-50 hover:scale-105">
-          <svg viewBox="0 0 6 6" aria-hidden="true" class="size-2 fill-blue-500">
-            <circle r="3" cx="3" cy="3" />
-          </svg>
+           class="inline-flex items-center py-1 px-2 leading-loose font-semibold rounded bg-gray-300 text-green-800 transition-all duration-200 hover:bg-gray-400 hover:scale-105">
           {{ .name }}
-          <span class="rounded-md bg-gray-100 px-1.5 py-0.5 text-xs font-semibold text-gray-700">{{ .count }}</span>
+          <span class="ml-1 inline-flex items-center justify-center w-6 h-4 text-xs text-white bg-gray-700 rounded-full">
+            {{ .count }}
+          </span>
         </a>
       {{ end }}
     </div>
