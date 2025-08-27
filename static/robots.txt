@@ -10,10 +10,25 @@ Disallow: /.git/
 Disallow: /themes/
 Disallow: /static/js/
 Disallow: /static/css/
+Disallow: /node_modules/
+Disallow: /*.json$
 
 # 允许搜索引擎抓取重要资源
 Allow: /images/
 Allow: /media/
+Allow: /assets/
+Allow: /*.css$
+Allow: /*.js$
 
 # 搜索引擎友好配置
 Crawl-delay: 1
+
+# 特定搜索引擎优化
+User-agent: Googlebot
+Crawl-delay: 0
+
+User-agent: Bingbot
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Crawl-delay: 2

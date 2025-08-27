@@ -106,4 +106,20 @@ unsafe = true
 
 [permalinks]
   posts = "/:slug/"
-  tags = "/tags/:slug/"   
+  tags = "/tags/:slug/"
+
+# SEO 优化配置
+[sitemap]
+  changefreq = "daily"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[params.seo]
+  # Google 验证码（需要添加你的验证码）
+  googleSiteVerification = ""
+  # Bing 验证码（需要添加你的验证码）
+  bingSiteVerification = ""
+
+# Google Analytics 配置（如果有的话）
+[params]
+  googleAnalytics = ""
