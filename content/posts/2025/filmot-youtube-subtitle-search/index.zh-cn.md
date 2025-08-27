@@ -8,7 +8,7 @@ createAt: "2025-08-27T15:45:00Z"
 description: ""
 draft: false
 expiryDate: "2026-08-27T00:00:00Z"
-image: media/prod-files-secure.s3.us-west-2.amazonaws.com_SCR-20250828-bggb.png
+image: media/prod-files-secure.s3.us-west-2.amazonaws.com_1756312605178-uvnjziyn7.webp
 isTranslated: true
 keywords:
     - YouTube搜索
@@ -19,7 +19,7 @@ keywords:
     - 效率提升
     - Web应用
     - 免费资源
-lastMod: "2025-08-27T16:20:00Z"
+lastMod: "2025-08-27T16:38:00Z"
 metaDescription: ""
 metaTitle: ""
 position: content/posts/2025
@@ -60,6 +60,6 @@ weight: 1
 - 支持多语言，覆盖全球内容
 
 ## 网站链接
-{{< bookmark image="<no value>" icon="https://filmot.com/favicon-16.png" url="https://filmot.com/" title="Filmot - Search in Youtube captions and subtitles" description="" >}}
+{{< bookmark image="https://scrn.foorilla.com/img/aHR0cHM6Ly9mb29yaWxsYS5jb20vbWVkaWEv.png" icon="https://filmot.com/favicon-16.png" url="https://filmot.com/" title="Filmot - Search in Youtube captions and subtitles" description="" >}}
 {{< /bookmark >}}
 

@@ -8,7 +8,7 @@ createAt: "2025-08-27T15:45:00Z"
 description: ""
 draft: false
 expiryDate: "2026-08-27T00:00:00Z"
-image: media/prod-files-secure.s3.us-west-2.amazonaws.com_SCR-20250828-bggb.png
+image: media/prod-files-secure.s3.us-west-2.amazonaws.com_1756312605178-uvnjziyn7.webp
 isTranslated: true
 keywords:
     - YouTube search
@@ -19,7 +19,7 @@ keywords:
     - efficiency
     - web application
     - free resource
-lastMod: "2025-08-27T16:21:00Z"
+lastMod: "2025-08-27T16:38:00Z"
 metaDescription: ""
 metaTitle: ""
 position: content/posts/2025
@@ -60,6 +60,6 @@ Runs on the web with no installation required; open-source nature allows for cus
 - Supports multiple languages for global content
 
 ## Website Link
-{{< bookmark image="<no value>" icon="https://filmot.com/favicon-16.png" url="https://filmot.com/" title="Filmot - Search in Youtube captions and subtitles" description="" >}}
+{{< bookmark image="https://scrn.foorilla.com/img/aHR0cHM6Ly9mb29yaWxsYS5jb20vbWVkaWEv.png" icon="https://filmot.com/favicon-16.png" url="https://filmot.com/" title="Filmot - Search in Youtube captions and subtitles" description="" >}}
 {{< /bookmark >}}
 
