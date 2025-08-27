@@ -16,19 +16,20 @@ keywords:
     - detective story
     - British accent
     - Interactive Learning
-lastMod: "2025-08-24T14:41:00Z"
+lastMod: "2025-08-26T14:00:00Z"
 metaDescription: ""
 metaTitle: ""
 position: content/posts/2025
 showComments: false
 slug: youtube-ICM6AI1kPAA
-status: Draft
+status: RePublish
 tags:
     - Education
     - English Learning
     - Content Creation
     - Novel
     - Tools
+    - Youtube
 title: 'Luke''s Podcast: Learn English Through Detective Stories'
 url: ""
 weight: 1
@@ -47,6 +48,6 @@ Step into a Victorian detective agency where you learn English by solving myster
 - Authentic British narration with subtitles for comprehensive practice
 
 ## Website Link
-{{< bookmark image="<no value>" icon="https://www.youtube.com/s/desktop/e5522eef/img/logos/favicon_144x144.png" url="https://www.youtube.com/watch?v=ICM6AI1kPAA" title="- YouTube" description="Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube." >}}
+{{< bookmark image="https://yt3.googleusercontent.com/7Pztg8I_KJBkX9XhWnQRQNmulnqCI6KEkSpWX5qYuzZiSoDv4QT7MiEu4XcCQQNBPcrUX1ko=s900-c-k-c0x00ffffff-no-rj" icon="https://www.youtube.com/s/desktop/5565b4e1/img/logos/favicon_144x144.png" url="https://www.youtube.com/watch?v=ICM6AI1kPAA" title="- YouTube" description="Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube." >}}
 {{< /bookmark >}}
 

@@ -16,19 +16,20 @@ keywords:
     - 深度内容
     - YouTube频道
     - 知识科普
-lastMod: "2025-08-24T14:52:00Z"
+lastMod: "2025-08-26T13:59:00Z"
 metaDescription: ""
 metaTitle: ""
 position: content/posts/2025
 showComments: false
 slug: youtube-2aa98246
-status: Draft
+status: RePublish
 tags:
     - 内容创作
     - 发现
     - 教育
     - 新闻
     - 新奇
+    - 油管
 title: fern：沙发纪录片频道
 url: ""
 weight: 1
@@ -47,6 +48,6 @@ weight: 1
 - 更新稳定，几乎周更的频率让追更党很满足
 
 ## 网站链接
-{{< bookmark image="https://yt3.googleusercontent.com/7Pztg8I_KJBkX9XhWnQRQNmulnqCI6KEkSpWX5qYuzZiSoDv4QT7MiEu4XcCQQNBPcrUX1ko=s900-c-k-c0x00ffffff-no-rj" icon="https://www.youtube.com/s/desktop/e5522eef/img/logos/favicon_144x144.png" url="https://www.youtube.com/@fern-tv" title="fern" description="Armchair documentaries, almost weekly Made by: @hoogyoutube @Simplicissimus" >}}
+{{< bookmark image="https://yt3.googleusercontent.com/7Pztg8I_KJBkX9XhWnQRQNmulnqCI6KEkSpWX5qYuzZiSoDv4QT7MiEu4XcCQQNBPcrUX1ko=s900-c-k-c0x00ffffff-no-rj" icon="https://www.youtube.com/s/desktop/5565b4e1/img/logos/favicon_144x144.png" url="https://www.youtube.com/@fern-tv" title="fern" description="Armchair documentaries, almost weekly Made by: @hoogyoutube @Simplicissimus" >}}
 {{< /bookmark >}}
 
