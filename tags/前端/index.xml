@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>前端 on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/tags/%E5%89%8D%E7%AB%AF/</link><description>Recent content in 前端 on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 27 Aug 2025 09:56:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/tags/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>21st.dev：AI驱动的前端组件库</title><link>https://findsofun.com/21st-ai-components/</link><pubDate>Wed, 27 Aug 2025 09:56:00 +0000</pubDate><guid>https://findsofun.com/21st-ai-components/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>前端 on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/tags/%E5%89%8D%E7%AB%AF/</link><description>Recent content in 前端 on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 27 Aug 2025 16:24:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/tags/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>BuouUI：TailwindCSS 组件库</title><link>https://findsofun.com/buouui-tailwind-ui-library/</link><pubDate>Wed, 27 Aug 2025 16:24:00 +0000</pubDate><guid>https://findsofun.com/buouui-tailwind-ui-library/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+&lt;p>组件即用
+BuouUI 是一个基于 TailwindCSS 的 UI 库，提供丰富的组件、区块和模板，专为 Next.js 和 React 项目设计。它集成了 Server Components 和 Radix UI，确保高性能和可访问性。开发者可以直接复制粘贴代码，快速集成到项目中，节省开发时间。&lt;/p>
+&lt;p>效率提升
+在实际开发中，BuouUI 的预构建组件覆盖了表单、表格、模态框等常见需求，减少重复编码。团队来自腾讯、华为等大厂，组件经过实战检验，提升项目迭代速度。支持实时协作和多语言，适合中大型团队协作。&lt;/p>
+&lt;p>设计精良
+UI 设计注重美观和功能性，动画效果流畅，如粒子时钟和步骤表单交互细腻。组件风格包括 brutal retro 和现代营销元素，视觉一致性高。用户反馈强调其高端优雅，易于定制主题和布局。&lt;/p>
+&lt;p>技术友好
+基于 TailwindCSS，开发者无需额外学习曲线，代码可直接嵌入。提供启动套件和文档，上手简单，支持端到端加密和云同步。开源社区活跃，定期更新新组件和模板。&lt;/p>
+&lt;h2 id="价格模式">价格模式&lt;/h2></description></item><item><title>21st.dev：AI驱动的前端组件库</title><link>https://findsofun.com/21st-ai-components/</link><pubDate>Wed, 27 Aug 2025 09:56:00 +0000</pubDate><guid>https://findsofun.com/21st-ai-components/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
 &lt;p>AI组件工场
 这是一个类似&lt;a href="http://v0.app/">V0.app&lt;/a>的专注于AI生成UI组件的开发平台，提供大量可复用的React和Tailwind组件。平台强调团队品味的体现，而非单纯依赖大语言模型的输出。开发者可以在这里找到设计精美的代码块，加速产品开发流程。&lt;/p>
 &lt;p>效率提升利器
