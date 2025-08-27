@@ -19,13 +19,13 @@ keywords:
     - 效率提升
     - Web应用
     - 免费资源
-lastMod: "2025-08-27T15:55:00Z"
+lastMod: "2025-08-27T16:02:00Z"
 metaDescription: ""
 metaTitle: ""
 position: content/posts/2025
 showComments: false
 slug: filmot-youtube-subtitle-search
-status: Pre
+status: RePublish
 tags:
     - 工具
     - 效率
@@ -60,6 +60,6 @@ weight: 1
 - 支持多语言，覆盖全球内容
 
 ## 网站链接
-{{< bookmark image="<no value>" icon="https://filmot.com/favicon-16.png" url="https://filmot.com/%20%EF%BD%9C%20youglish%20%E7%9A%84%E5%BC%80%E6%BA%90%E5%B9%B3%E6%9B%BF" title="Filmot - Search in Youtube captions and subtitles" description="" >}}
+{{< bookmark image="https://d4.alternativeto.net/RgDf1rqQKT0NH2IDS_IX2MklMj3FHIxvyR12Sd2O26w/fit/1200/630/no/0/YWJzOi8vZGlzdC9zdGF0aWMvZ2Z4L2FsdDItb2cucG5n.jpg" icon="https://filmot.com/favicon-16.png" url="https://filmot.com/" title="Filmot - Search in Youtube captions and subtitles" description="" >}}
 {{< /bookmark >}}
 
