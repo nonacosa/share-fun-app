@@ -19,19 +19,20 @@ keywords:
     - 语言提升
     - 互动平台
     - 真实语境
-lastMod: "2025-08-27T16:02:00Z"
+lastMod: "2025-08-27T16:31:00Z"
 metaDescription: ""
 metaTitle: ""
 position: content/posts/2025
 showComments: false
 slug: roarlingo-pronunciation-web
-status: Pre
+status: RePublish
 tags:
     - 教育
     - 英语学习
     - 工具
     - 效率
     - 免费资源
+    - 油管
 title: RoarLingo：真实视频学发音
 url: ""
 weight: 1
@@ -60,6 +61,6 @@ weight: 1
 - 专注发音细节提升快
 
 ## 网站链接
-{{< bookmark image="<no value>" icon="https://roarlingo.com/favicon.ico" url="https://roarlingo.com/" title="RoarLingo - Learn Pronunciation with Real Videos" description="Master English pronunciation with real video examples" >}}
+{{< bookmark image="https://buouui.com/opengraph-image.jpg?d185080d20bf96f7" icon="https://roarlingo.com/favicon.ico" url="https://roarlingo.com/" title="RoarLingo - Learn Pronunciation with Real Videos" description="Master English pronunciation with real video examples" >}}
 {{< /bookmark >}}
 
