@@ -19,13 +19,13 @@ keywords:
     - UI设计
     - 开发效率
     - 开源组件
-lastMod: "2025-08-27T09:35:00Z"
+lastMod: "2025-08-27T09:56:00Z"
 metaDescription: ""
 metaTitle: ""
 position: content/posts/2025
 showComments: false
 slug: 21st-ai-components
-status: Pre
+status: RePublish
 tags:
     - 工具
     - 编程
@@ -38,7 +38,7 @@ weight: 1
 ---
 ## 产品亮点
 AI组件工场
-这是一个专注于AI生成UI组件的开发平台，提供大量可复用的React和Tailwind组件。平台强调团队品味的体现，而非单纯依赖大语言模型的输出。开发者可以在这里找到设计精美的代码块，加速产品开发流程。
+这是一个类似[V0.app](http://v0.app/)的专注于AI生成UI组件的开发平台，提供大量可复用的React和Tailwind组件。平台强调团队品味的体现，而非单纯依赖大语言模型的输出。开发者可以在这里找到设计精美的代码块，加速产品开发流程。
 
 效率提升利器
 在实际开发中，只需简单浏览组件库就能快速找到所需模块，支持复制粘贴直接使用。特别适合快速原型设计和团队协作，大幅减少重复编码时间。AI辅助生成功能让自然语言描述直接转化为可用代码。
