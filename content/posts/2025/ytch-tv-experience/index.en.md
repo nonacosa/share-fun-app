@@ -19,7 +19,7 @@ keywords:
     - web tool
     - free resource
     - efficiency
-lastMod: "2025-08-27T13:55:00Z"
+lastMod: "2025-08-27T17:43:00Z"
 metaDescription: ""
 metaTitle: ""
 position: content/posts/2025
@@ -57,6 +57,6 @@ Built on web technology, it requires no downloads—just open a browser to start
 - No installation needed, works instantly with strong compatibility
 
 ## Website Link
-{{< bookmark image="<no value>" icon="https://ytch.tv/favicon.ico" url="https://ytch.tv/%20%7C%20%E6%8A%8A%20YouTube%20%E5%BD%93%E6%88%90%E7%94%B5%E8%A7%86%E7%9C%8B%E3%80%82%E9%9D%9E%E5%B8%B8%E5%A5%BD%E3%80%82" title="404 Not Found" description="" >}}
+{{< bookmark image="<no value>" icon="https://ytch.tv/favicon/favicon-16x16.png" url="https://ytch.tv/" title="YTCH TV" description="If Youtube had actual channels." >}}
 {{< /bookmark >}}
 
