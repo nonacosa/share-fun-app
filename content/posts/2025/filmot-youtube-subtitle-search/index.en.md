@@ -8,7 +8,7 @@ createAt: "2025-08-27T15:45:00Z"
 description: ""
 draft: false
 expiryDate: "2026-08-27T00:00:00Z"
-image: media/img.findsofun.com_1756309517503-gtaduc7bx.png
+image: media/prod-files-secure.s3.us-west-2.amazonaws.com_SCR-20250828-bggb.png
 isTranslated: true
 keywords:
     - YouTube search
@@ -19,7 +19,7 @@ keywords:
     - efficiency
     - web application
     - free resource
-lastMod: "2025-08-27T16:02:00Z"
+lastMod: "2025-08-27T16:21:00Z"
 metaDescription: ""
 metaTitle: ""
 position: content/posts/2025
@@ -32,7 +32,7 @@ tags:
     - Free Resources
     - Education
     - Youtube
-title: 'Filmot: Open Source YouTube Subtitle Search'
+title: 'Filmot: YouTube Subtitle Search'
 url: ""
 weight: 1
 ---
@@ -60,6 +60,6 @@ Runs on the web with no installation required; open-source nature allows for cus
 - Supports multiple languages for global content
 
 ## Website Link
-{{< bookmark image="https://d4.alternativeto.net/RgDf1rqQKT0NH2IDS_IX2MklMj3FHIxvyR12Sd2O26w/fit/1200/630/no/0/YWJzOi8vZGlzdC9zdGF0aWMvZ2Z4L2FsdDItb2cucG5n.jpg" icon="https://filmot.com/favicon-16.png" url="https://filmot.com/" title="Filmot - Search in Youtube captions and subtitles" description="" >}}
+{{< bookmark image="<no value>" icon="https://filmot.com/favicon-16.png" url="https://filmot.com/" title="Filmot - Search in Youtube captions and subtitles" description="" >}}
 {{< /bookmark >}}
 

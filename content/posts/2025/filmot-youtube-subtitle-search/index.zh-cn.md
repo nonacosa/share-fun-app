@@ -8,7 +8,7 @@ createAt: "2025-08-27T15:45:00Z"
 description: ""
 draft: false
 expiryDate: "2026-08-27T00:00:00Z"
-image: media/img.findsofun.com_1756309507363-99myrk5tf.png
+image: media/prod-files-secure.s3.us-west-2.amazonaws.com_SCR-20250828-bggb.png
 isTranslated: true
 keywords:
     - YouTube搜索
@@ -19,7 +19,7 @@ keywords:
     - 效率提升
     - Web应用
     - 免费资源
-lastMod: "2025-08-27T16:02:00Z"
+lastMod: "2025-08-27T16:20:00Z"
 metaDescription: ""
 metaTitle: ""
 position: content/posts/2025
@@ -32,7 +32,7 @@ tags:
     - 教育
     - 油管
     - 英语学习
-title: Filmot：开源YouTube字幕搜索神器
+title: Filmot：YouTube字幕搜索神器
 url: ""
 weight: 1
 ---
@@ -60,6 +60,6 @@ weight: 1
 - 支持多语言，覆盖全球内容
 
 ## 网站链接
-{{< bookmark image="https://d4.alternativeto.net/RgDf1rqQKT0NH2IDS_IX2MklMj3FHIxvyR12Sd2O26w/fit/1200/630/no/0/YWJzOi8vZGlzdC9zdGF0aWMvZ2Z4L2FsdDItb2cucG5n.jpg" icon="https://filmot.com/favicon-16.png" url="https://filmot.com/" title="Filmot - Search in Youtube captions and subtitles" description="" >}}
+{{< bookmark image="<no value>" icon="https://filmot.com/favicon-16.png" url="https://filmot.com/" title="Filmot - Search in Youtube captions and subtitles" description="" >}}
 {{< /bookmark >}}
 
