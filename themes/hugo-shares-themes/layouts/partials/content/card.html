@@ -3,7 +3,7 @@
 	<a href="{{ .Permalink }}" class="absolute inset-0 z-10"></a>
 	
 	<!-- 图片区域 - 更大的比例 -->
-	<div class="relative aspect-[4/3] w-full overflow-hidden border-b-2">
+	<div class="relative aspect-[155/100] w-full overflow-hidden border-b-2">
 		{{- if .Params.image }}
 		  {{- if (strings.HasPrefix .Params.image "http") }}
 			<img src="{{ .Params.image }}" alt="{{ .Title }}" 
