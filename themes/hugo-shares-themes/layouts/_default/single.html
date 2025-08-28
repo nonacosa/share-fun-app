@@ -1,13 +1,13 @@
 {{ define "main" }}
 {{- partial "content/breadcrumb.html" . -}}
 
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14 mt-2">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-  <article data-pagefind-body class="md:col-span-2 prose lg:prose-lg">
+<article data-pagefind-body class="prose prose-sm lg:prose-lg md:col-span-2">
 
     <header class="not-prose">
       
-      <h1 id="title" class="text-4xl font-bold leading-normal">
+      <h1 id="title" class="text-4xl font-bold leading-normal mt-6">
         {{- if .Params.title }}
           {{- if reflect.IsMap .Params.title }}
             {{- index .Params.title .Site.Language.Lang | default .Title }}
