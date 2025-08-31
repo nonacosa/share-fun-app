@@ -116,3 +116,6 @@ other = "提示词"
 [Editing-Tools]
 other = "剪辑工具"
 
+
+[doc]
+other = "文档"
