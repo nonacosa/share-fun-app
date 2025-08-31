@@ -111,3 +111,7 @@ other = "Article"
 [Prompt]
 other = "Prompt"
 
+
+[Editing-Tools]
+other = "Editing Tools"
+

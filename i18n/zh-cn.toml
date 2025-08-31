@@ -112,3 +112,7 @@ other = "文章"
 [Prompt]
 other = "提示词"
 
+
+[Editing-Tools]
+other = "剪辑工具"
+
