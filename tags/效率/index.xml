@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>效率 on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/tags/%E6%95%88%E7%8E%87/</link><description>Recent content in 效率 on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 29 Aug 2025 16:08:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/tags/%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml"/><item><title>DuckDB：轻量级分析数据库利器</title><link>https://findsofun.com/duckdb-analytical-database/</link><pubDate>Fri, 29 Aug 2025 16:08:00 +0000</pubDate><guid>https://findsofun.com/duckdb-analytical-database/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>效率 on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/tags/%E6%95%88%E7%8E%87/</link><description>Recent content in 效率 on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 31 Aug 2025 17:25:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/tags/%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml"/><item><title>Filmora Veo3提示词神器</title><link>https://findsofun.com/filmora-veo3-prompt/</link><pubDate>Sun, 31 Aug 2025 17:25:00 +0000</pubDate><guid>https://findsofun.com/filmora-veo3-prompt/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+&lt;p>AI视频生成
+这是一个基于Google Veo 3的AI视频生成工具，通过文字提示词就能快速制作高质量短视频。它整合在Filmora编辑器中，让创意到成片的流程变得异常简单。&lt;/p>
+&lt;p>场景效率
+从想法到8秒视频只需几分钟，特别适合社交媒体内容创作。无需拍摄团队和设备，一个人就能完成专业级视频制作，大大提升了内容产出效率。&lt;/p>
+&lt;p>设计体验
+界面设计直观易用，提示词输入和视频生成无缝衔接。生成的视频自带同步音频，包括自然对话和环境音效，视听体验相当完整。&lt;/p>
+&lt;p>技术实操
+操作门槛极低，上传图片或输入文字提示即可生成视频。支持多平台尺寸自动适配，还能用Filmora进一步编辑优化，新手也能快速上手。&lt;/p>
+&lt;h2 id="价格模式">价格模式&lt;/h2></description></item><item><title>Leonardo AI：VEO3提示词精通指南</title><link>https://findsofun.com/leonardo-veo3-prompt-guide/</link><pubDate>Sun, 31 Aug 2025 17:25:00 +0000</pubDate><guid>https://findsofun.com/leonardo-veo3-prompt-guide/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+&lt;p>产品简介
+这是一个专注于AI工具Leonardo.ai的网站，提供关于VEO3提示词使用的深度文章。它帮助用户掌握高级提示技巧，提升AI交互效果。内容针对实际应用场景，旨在让用户快速上手并发挥工具最大潜力。
+场景效率
+在实际使用中，它能显著提高生成内容的精准度和效率。无论是创作还是设计，用户都能通过优化提示词节省大量时间。文章中的技巧可直接应用于日常工作流，让AI成为得力助手。
+设计细节
+网站设计简洁，专注于内容传递，用户体验流畅。没有多余干扰，让读者能快速聚焦于核心知识。这种极简风格确保了学习过程的高效和愉悦。
+技术实操
+技术层面，文章深入浅出，即使新手也能轻松理解。它提供了可操作的建议，无需复杂配置即可应用。上手难度低，能立即带来实际价值。&lt;/p>
+&lt;h2 id="价格模式">价格模式&lt;/h2></description></item><item><title>DuckDB：轻量级分析数据库利器</title><link>https://findsofun.com/duckdb-analytical-database/</link><pubDate>Fri, 29 Aug 2025 16:08:00 +0000</pubDate><guid>https://findsofun.com/duckdb-analytical-database/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
 &lt;p>分析数据库
 这是一个专门用于数据分析的SQL数据库管理系统，采用列式存储引擎设计，主要亮点是处理和同步本地 CSV ，支持标准的SQL查询语法。它最大的特点是进程内运行，不需要单独的服务器部署，可以直接嵌入到应用程序中使用。&lt;/p>
 &lt;p>数据处理快
