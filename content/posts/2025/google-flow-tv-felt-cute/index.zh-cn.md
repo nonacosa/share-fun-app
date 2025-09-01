@@ -8,7 +8,7 @@ createAt: "2025-09-01T00:37:00Z"
 description: ""
 draft: false
 expiryDate: "2026-09-01T00:00:00Z"
-image: media/prod-files-secure.s3.us-west-2.amazonaws.com_SCR-20250901-iemm.jpeg
+image: media/img.findsofun.com_1756687055792-qkoyiec59.png
 isTranslated: true
 keywords:
     - 创意发现
@@ -19,13 +19,13 @@ keywords:
     - 被动浏览
     - 灵感获取
     - 网页体验
-lastMod: "2025-09-01T00:45:00Z"
+lastMod: "2025-09-01T00:40:00Z"
 metaDescription: ""
 metaTitle: ""
 position: content/posts/2025
 showComments: false
 slug: google-flow-tv-felt-cute
-status: RePublish
+status: Pre
 tags:
     - 发现
     - 新奇
