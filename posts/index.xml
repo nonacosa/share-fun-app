@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/posts/</link><description>Recent content in Posts on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 09 Sep 2025 11:13:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Citywalki：云端漫步全球城市</title><link>https://findsofun.com/citywalki-virtual-tour/</link><pubDate>Tue, 09 Sep 2025 11:13:00 +0000</pubDate><guid>https://findsofun.com/citywalki-virtual-tour/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/posts/</link><description>Recent content in Posts on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 09 Sep 2025 13:44:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenSaaS：开源SaaS开发利器</title><link>https://findsofun.com/opensaas-free-starter-kit/</link><pubDate>Tue, 09 Sep 2025 13:44:00 +0000</pubDate><guid>https://findsofun.com/opensaas-free-starter-kit/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+&lt;p>这是一个完全免费开源的SaaS应用启动模板，基于React和NodeJS构建，帮你快速搭建包含认证、支付、AI集成等核心功能的完整应用。
+开发效率飙升，内置身份验证、Stripe支付集成和管理后台，让你专注于业务逻辑而非基础架构。从概念到上线只需几天时间，多个真实用户案例证明其可行性。
+界面设计简洁实用，管理面板包含数据可视化和分析功能，与Plausible或Google Analytics无缝集成，提供清晰的数据洞察。
+技术栈选择明智，全栈TypeScript支持、内置AI就绪架构、Playwright端到端测试，部署灵活无供应商锁定，文档完善社区活跃。&lt;/p>
+&lt;h2 id="价格模式">价格模式&lt;/h2></description></item><item><title>开发者免费资源大全</title><link>https://findsofun.com/free-for-dev/</link><pubDate>Tue, 09 Sep 2025 13:44:00 +0000</pubDate><guid>https://findsofun.com/free-for-dev/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+&lt;p>这是一个专门为开发者和开源作者整理的免费服务清单网站，覆盖云服务、API、开发工具等多个类别。它帮你快速找到那些提供永久免费层级的服务，避免在试用期过后被迫付费的尴尬。&lt;/p>
+&lt;p>实际使用中，当你需要部署一个小项目或测试新工具时，这里能直接给出可用的免费选项。比如云服务商的具体免费额度、API的调用限制都列得清清楚楚，省去了逐个官网查阅的时间。&lt;/p>
+&lt;p>网站设计极简，分类清晰且支持快速搜索，每个条目都附带关键免费条款说明。界面没有多余装饰，专注信息呈现，滚动浏览时能高效捕捉所需内容。&lt;/p>
+&lt;p>所有收录服务都经过社区审核，确保免费层级真实长期有效。技术选型时可以直接参考，支持Pull Request贡献更新，维护活跃度高。&lt;/p>
+&lt;h2 id="价格模式">价格模式&lt;/h2></description></item><item><title>Citywalki：云端漫步全球城市</title><link>https://findsofun.com/citywalki-virtual-tour/</link><pubDate>Tue, 09 Sep 2025 11:13:00 +0000</pubDate><guid>https://findsofun.com/citywalki-virtual-tour/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
 &lt;p>这是一个让你足不出户就能沉浸式体验全球城市街景的虚拟漫步平台。通过实时街景视频，你可以选择步行、驾车或飞行模式探索各地风情，从东京街头到巴黎小巷，瞬间切换场景。&lt;/p>
 &lt;p>无论你是旅行规划者、地理爱好者，还是单纯想放松心情，它都能提供真实的临场感。清晨在悉尼歌剧院旁散步，傍晚穿越纽约时代广场，无需机票签证，随时开启一场说走就走的视觉旅行。&lt;/p>
 &lt;p>界面极其简洁，右侧城市列表按大洲分类，点击即跳转。视频流畅无卡顿，支持右键快速控制音量和视角，背景环境音（车流、人声）细节到位，仿佛真的站在异国街头。&lt;/p>
