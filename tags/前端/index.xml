@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>前端 on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/tags/%E5%89%8D%E7%AB%AF/</link><description>Recent content in 前端 on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 05 Sep 2025 04:25:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/tags/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>GitHub图标库趋势实时追踪</title><link>https://findsofun.com/getstack-iconset-trends/</link><pubDate>Fri, 05 Sep 2025 04:25:00 +0000</pubDate><guid>https://findsofun.com/getstack-iconset-trends/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>前端 on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/tags/%E5%89%8D%E7%AB%AF/</link><description>Recent content in 前端 on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 09 Sep 2025 11:06:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/tags/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>PaperCSS：非正式风格框架</title><link>https://findsofun.com/paper-css-framework/</link><pubDate>Tue, 09 Sep 2025 11:06:00 +0000</pubDate><guid>https://findsofun.com/paper-css-framework/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+&lt;p>手写质感
+这是一个为网页添加手写纸质感的CSS框架，让界面摆脱冰冷的技术感。它通过模拟纸张纹理和自然笔触，创造出独特的视觉体验。适合需要温暖人文气息的项目使用。&lt;/p>
+&lt;p>快速上手
+直接通过CDN引入即可使用，无需复杂配置过程。框架提供了完整的组件库和布局系统，包括按钮、卡片、表单等常见元素。文档清晰易懂，几分钟就能搭建出有特色的页面。&lt;/p>
+&lt;p>设计哲学
+坚持非正式美学理念，每个元素都带有轻微的不规则和手绘质感。边框不是完美的直线，阴影带着自然扩散，颜色搭配温暖舒适。这种设计让界面显得更有人情味和亲和力。&lt;/p>
+&lt;p>技术轻量
+基于纯CSS开发，不依赖任何JavaScript库。支持自定义SASS变量，可以轻松调整整体风格。构建过程简单明了，支持npm安装和源码编译两种方式，适合不同开发需求。&lt;/p>
+&lt;h2 id="价格模式">价格模式&lt;/h2></description></item><item><title>GitHub图标库趋势实时追踪</title><link>https://findsofun.com/getstack-iconset-trends/</link><pubDate>Fri, 05 Sep 2025 04:25:00 +0000</pubDate><guid>https://findsofun.com/getstack-iconset-trends/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
 &lt;p>这是一个专门追踪GitHub上图标库使用趋势的数据平台，实时展示各类图标库在开源项目中的流行度和变化趋势。&lt;/p>
 &lt;p>数据每周更新，能清晰看到哪些图标库正在崛起或衰落，比如Tabler本周新增4个仓库使用，而React Icons略有下降，对技术选型很有参考价值。&lt;/p>
 &lt;p>界面设计极其简洁，没有多余元素，直接以排行榜和趋势图呈现数据，搜索功能快速定位特定图标库，使用体验流畅无干扰。&lt;/p>

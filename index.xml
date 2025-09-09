@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FindSoFun - 发现有趣工具</title><link>https://findsofun.com/</link><description>Recent content on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 08 Sep 2025 13:33:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/index.xml" rel="self" type="application/rss+xml"/><item><title>小红书自动化运营神器</title><link>https://findsofun.com/xiaohongshu-mcp-automation/</link><pubDate>Mon, 08 Sep 2025 13:33:00 +0000</pubDate><guid>https://findsofun.com/xiaohongshu-mcp-automation/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FindSoFun - 发现有趣工具</title><link>https://findsofun.com/</link><description>Recent content on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 09 Sep 2025 11:13:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Citywalki：云端漫步全球城市</title><link>https://findsofun.com/citywalki-virtual-tour/</link><pubDate>Tue, 09 Sep 2025 11:13:00 +0000</pubDate><guid>https://findsofun.com/citywalki-virtual-tour/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+&lt;p>这是一个让你足不出户就能沉浸式体验全球城市街景的虚拟漫步平台。通过实时街景视频，你可以选择步行、驾车或飞行模式探索各地风情，从东京街头到巴黎小巷，瞬间切换场景。&lt;/p>
+&lt;p>无论你是旅行规划者、地理爱好者，还是单纯想放松心情，它都能提供真实的临场感。清晨在悉尼歌剧院旁散步，傍晚穿越纽约时代广场，无需机票签证，随时开启一场说走就走的视觉旅行。&lt;/p>
+&lt;p>界面极其简洁，右侧城市列表按大洲分类，点击即跳转。视频流畅无卡顿，支持右键快速控制音量和视角，背景环境音（车流、人声）细节到位，仿佛真的站在异国街头。&lt;/p>
+&lt;p>完全免费且无需注册，打开网站随机城市或搜索特定地点，三秒内加载完成。支持全屏模式和氛围音开关，对网络要求低，手机电脑都能流畅使用。&lt;/p>
+&lt;h2 id="价格模式">价格模式&lt;/h2></description></item><item><title>PaperCSS：非正式风格框架</title><link>https://findsofun.com/paper-css-framework/</link><pubDate>Tue, 09 Sep 2025 11:06:00 +0000</pubDate><guid>https://findsofun.com/paper-css-framework/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+&lt;p>手写质感
+这是一个为网页添加手写纸质感的CSS框架，让界面摆脱冰冷的技术感。它通过模拟纸张纹理和自然笔触，创造出独特的视觉体验。适合需要温暖人文气息的项目使用。&lt;/p>
+&lt;p>快速上手
+直接通过CDN引入即可使用，无需复杂配置过程。框架提供了完整的组件库和布局系统，包括按钮、卡片、表单等常见元素。文档清晰易懂，几分钟就能搭建出有特色的页面。&lt;/p>
+&lt;p>设计哲学
+坚持非正式美学理念，每个元素都带有轻微的不规则和手绘质感。边框不是完美的直线，阴影带着自然扩散，颜色搭配温暖舒适。这种设计让界面显得更有人情味和亲和力。&lt;/p>
+&lt;p>技术轻量
+基于纯CSS开发，不依赖任何JavaScript库。支持自定义SASS变量，可以轻松调整整体风格。构建过程简单明了，支持npm安装和源码编译两种方式，适合不同开发需求。&lt;/p>
+&lt;h2 id="价格模式">价格模式&lt;/h2></description></item><item><title>小红书自动化运营神器</title><link>https://findsofun.com/xiaohongshu-mcp-automation/</link><pubDate>Mon, 08 Sep 2025 13:33:00 +0000</pubDate><guid>https://findsofun.com/xiaohongshu-mcp-automation/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
 &lt;p>这是一个开源项目，让Claude Code能够自动化运营小红书账号。通过MCP协议实现内容发布、搜索和feed流操作，帮助用户节省运营时间。&lt;/p>
 &lt;p>实际使用中，新账号一周内就能获得6000+赞藏，第一天就突破千赞。完全自动化运行占比90%以上，特别适合没时间手动运营的内容创作者。&lt;/p>
 &lt;p>项目设计简洁实用，直接通过Claude Code调用即可使用。操作界面清晰，发布流程顺畅，即使非技术人员也能快速上手。&lt;/p>

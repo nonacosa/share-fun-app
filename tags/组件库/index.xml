@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>组件库 on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/tags/%E7%BB%84%E4%BB%B6%E5%BA%93/</link><description>Recent content in 组件库 on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 27 Aug 2025 16:24:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/tags/%E7%BB%84%E4%BB%B6%E5%BA%93/index.xml" rel="self" type="application/rss+xml"/><item><title>BuouUI：TailwindCSS 组件库</title><link>https://findsofun.com/buouui-tailwind-ui-library/</link><pubDate>Wed, 27 Aug 2025 16:24:00 +0000</pubDate><guid>https://findsofun.com/buouui-tailwind-ui-library/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>组件库 on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/tags/%E7%BB%84%E4%BB%B6%E5%BA%93/</link><description>Recent content in 组件库 on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 09 Sep 2025 11:06:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/tags/%E7%BB%84%E4%BB%B6%E5%BA%93/index.xml" rel="self" type="application/rss+xml"/><item><title>PaperCSS：非正式风格框架</title><link>https://findsofun.com/paper-css-framework/</link><pubDate>Tue, 09 Sep 2025 11:06:00 +0000</pubDate><guid>https://findsofun.com/paper-css-framework/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+&lt;p>手写质感
+这是一个为网页添加手写纸质感的CSS框架，让界面摆脱冰冷的技术感。它通过模拟纸张纹理和自然笔触，创造出独特的视觉体验。适合需要温暖人文气息的项目使用。&lt;/p>
+&lt;p>快速上手
+直接通过CDN引入即可使用，无需复杂配置过程。框架提供了完整的组件库和布局系统，包括按钮、卡片、表单等常见元素。文档清晰易懂，几分钟就能搭建出有特色的页面。&lt;/p>
+&lt;p>设计哲学
+坚持非正式美学理念，每个元素都带有轻微的不规则和手绘质感。边框不是完美的直线，阴影带着自然扩散，颜色搭配温暖舒适。这种设计让界面显得更有人情味和亲和力。&lt;/p>
+&lt;p>技术轻量
+基于纯CSS开发，不依赖任何JavaScript库。支持自定义SASS变量，可以轻松调整整体风格。构建过程简单明了，支持npm安装和源码编译两种方式，适合不同开发需求。&lt;/p>
+&lt;h2 id="价格模式">价格模式&lt;/h2></description></item><item><title>BuouUI：TailwindCSS 组件库</title><link>https://findsofun.com/buouui-tailwind-ui-library/</link><pubDate>Wed, 27 Aug 2025 16:24:00 +0000</pubDate><guid>https://findsofun.com/buouui-tailwind-ui-library/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
 &lt;p>组件即用
 BuouUI 是一个基于 TailwindCSS 的 UI 库，提供丰富的组件、区块和模板，专为 Next.js 和 React 项目设计。它集成了 Server Components 和 Radix UI，确保高性能和可访问性。开发者可以直接复制粘贴代码，快速集成到项目中，节省开发时间。&lt;/p>
 &lt;p>效率提升
