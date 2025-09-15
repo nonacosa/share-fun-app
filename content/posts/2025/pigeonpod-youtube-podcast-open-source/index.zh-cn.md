@@ -19,13 +19,13 @@ keywords:
     - 广告过滤
     - 跨平台
     - 免费转换
-lastMod: "2025-09-15T06:02:00Z"
+lastMod: "2025-09-15T10:46:00Z"
 metaDescription: ""
 metaTitle: ""
 position: content/posts/2025
 showComments: false
 slug: pigeonpod-youtube-podcast-open-source
-status: Pre
+status: RePublish
 tags:
     - 工具
     - 开源推荐
@@ -43,6 +43,8 @@ weight: 1
 
 ## 价格模式
 <!--more-->免费版：自托管开源；专业版：4.9美元/月（10频道）；Max版：6.9美元/月（无限频道）
+
+PS：人民币定价是 9.9 人民币/月 和 15.9 人名币/月
 
 ## 推荐理由
 - 完全开源可自建部署
