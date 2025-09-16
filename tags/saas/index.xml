@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SAAS on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/tags/saas/</link><description>Recent content in SAAS on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 10 Sep 2025 07:10:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/tags/saas/index.xml" rel="self" type="application/rss+xml"/><item><title>ShipFast：5分钟从想法到上线</title><link>https://findsofun.com/shipfast-nextjs-boilerplate/</link><pubDate>Wed, 10 Sep 2025 07:10:00 +0000</pubDate><guid>https://findsofun.com/shipfast-nextjs-boilerplate/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SAAS on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/tags/saas/</link><description>Recent content in SAAS on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 16 Sep 2025 10:47:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/tags/saas/index.xml" rel="self" type="application/rss+xml"/><item><title>BrowserAct：无代码AI网页抓取神器</title><link>https://findsofun.com/browseract-ai-web-scraper/</link><pubDate>Tue, 16 Sep 2025 10:47:00 +0000</pubDate><guid>https://findsofun.com/browseract-ai-web-scraper/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+&lt;p>智能抓取任意网站
+这是一个基于AI的网页抓取工具，让你不用写代码就能从任何网站提取数据。它通过自然语言描述就能创建抓取任务，自动处理验证码和广告过滤。数据结果干净可靠，直接集成到现有工作流中。&lt;/p>
+&lt;p>场景效率提升
+以前需要程序员花几天写的爬虫，现在用几句话描述就能搞定。比如实时监控竞争对手价格，自动抓取招聘信息，或者跟踪新闻动态。数据直接推送到n8n、Make这些自动化平台，整个流程完全无缝衔接。&lt;/p>
+&lt;p>设计体验流畅
+界面极其简洁，没有复杂配置项。输入网址和抓取要求就能运行，每一步执行状态都可视化可回放。云端24小时运行，不用操心服务器维护，抓取过程稳定不掉线。&lt;/p>
+&lt;p>技术门槛为零
+完全不需要编程基础，自然语言输入就能生成抓取逻辑。支持全球住宅IP绕过地域限制，自动处理各种反爬机制。按使用量付费，每天免费500点数，成本比传统方案低90%。&lt;/p>
+&lt;h2 id="价格模式">价格模式&lt;/h2></description></item><item><title>ShipFast：5分钟从想法到上线</title><link>https://findsofun.com/shipfast-nextjs-boilerplate/</link><pubDate>Wed, 10 Sep 2025 07:10:00 +0000</pubDate><guid>https://findsofun.com/shipfast-nextjs-boilerplate/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
 &lt;p>这是一个专为创业者和开发者设计的NextJS样板代码库，帮你快速搭建SaaS、AI工具或任何Web应用。它集成了支付、登录、邮件、数据库等核心功能，让你专注于产品本身而不是重复造轮子。&lt;/p>
 &lt;p>实际使用中，原本需要22小时的各种配置现在只需几分钟。不用再折腾Stripe webhooks、DNS设置、邮件服务集成，这些繁琐的事情ShipFast都已经帮你搞定，真正实现了从想法到上线的极速转化。&lt;/p>
 &lt;p>界面设计简洁实用，组件库丰富但不过度设计，动画效果恰到好处。文档详细易懂，即使是新手也能快速上手，避免了学习曲线过陡的问题。&lt;/p>
