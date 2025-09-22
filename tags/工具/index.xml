@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>工具 on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/tags/%E5%B7%A5%E5%85%B7/</link><description>Recent content in 工具 on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 16 Sep 2025 10:47:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/tags/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>BrowserAct：无代码AI网页抓取神器</title><link>https://findsofun.com/browseract-ai-web-scraper/</link><pubDate>Tue, 16 Sep 2025 10:47:00 +0000</pubDate><guid>https://findsofun.com/browseract-ai-web-scraper/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>工具 on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/tags/%E5%B7%A5%E5%85%B7/</link><description>Recent content in 工具 on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 22 Sep 2025 01:55:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/tags/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>Haye：Mac上的全能AI助手</title><link>https://findsofun.com/haye-ai-macos-assistant/</link><pubDate>Mon, 22 Sep 2025 01:55:00 +0000</pubDate><guid>https://findsofun.com/haye-ai-macos-assistant/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+&lt;p>这是一款专为macOS设计的AI聊天助手，让你在单个应用中体验DeepSeek、GPT-4o、Claude-3.5等顶级模型。&lt;/p>
+&lt;p>通过Command+E快捷键随时呼出，无论是处理文档、分析截图还是查询网页，都能无缝融入工作流程。支持多模型同时对话，一个答案不够就对比多个响应，大大提升决策效率。&lt;/p>
+&lt;p>界面设计完全遵循macOS生态，现代简洁的视觉风格让阅读成为享受。交互平衡得恰到好处，不堆砌功能却覆盖所有核心场景，每个细节都透着优雅。&lt;/p>
+&lt;p>安装只需几秒，支持Intel和Apple Silicon芯片。可配置自有API密钥，自定义响应风格和快捷键，学习曲线平缓但个性化空间极大。&lt;/p>
+&lt;h2 id="价格模式">价格模式&lt;/h2></description></item><item><title>FireRedTTS2：多语言对话语音生成神器</title><link>https://findsofun.com/firered-tts2-voice/</link><pubDate>Mon, 22 Sep 2025 01:54:00 +0000</pubDate><guid>https://findsofun.com/firered-tts2-voice/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+&lt;p>长文本流式TTS系统，专为多说话人对话场景设计，支持实时生成自然流畅的语音对话。基于双Transformer架构，能够处理文本-语音交错序列，实现灵活的逐句生成。&lt;/p>
+&lt;p>在播客制作和聊天机器人场景中表现突出，可生成长达3分钟的多说话人对话，支持4个说话人同时切换。实际测试中相似度高，错误率低，适合需要高质量语音交互的产品集成。&lt;/p>
+&lt;p>提供简洁的Web界面，支持语音克隆和随机音色生成，操作流程直观。界面设计注重实用性，用户可以快速上手进行对话生成和效果预览。&lt;/p>
+&lt;p>基于PyTorch实现，提供完整的预训练模型和推理代码。安装过程清晰，支持多语言零样本语音克隆，技术实现稳定可靠，开发者可以快速集成到现有项目中。&lt;/p>
+&lt;h2 id="价格模式">价格模式&lt;/h2></description></item><item><title>BrowserAct：无代码AI网页抓取神器</title><link>https://findsofun.com/browseract-ai-web-scraper/</link><pubDate>Tue, 16 Sep 2025 10:47:00 +0000</pubDate><guid>https://findsofun.com/browseract-ai-web-scraper/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
 &lt;p>智能抓取任意网站
 这是一个基于AI的网页抓取工具，让你不用写代码就能从任何网站提取数据。它通过自然语言描述就能创建抓取任务，自动处理验证码和广告过滤。数据结果干净可靠，直接集成到现有工作流中。&lt;/p>
 &lt;p>场景效率提升

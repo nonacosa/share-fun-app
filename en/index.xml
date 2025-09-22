@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FindSoFun - Discover Cool Tools</title><link>https://findsofun.com/en/</link><description>Recent content on FindSoFun - Discover Cool Tools</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Tue, 16 Sep 2025 10:47:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/en/index.xml" rel="self" type="application/rss+xml"/><item><title>BrowserAct: No-Code AI Web Scraper</title><link>https://findsofun.com/en/browseract-ai-web-scraper/</link><pubDate>Tue, 16 Sep 2025 10:47:00 +0000</pubDate><guid>https://findsofun.com/en/browseract-ai-web-scraper/</guid><description>&lt;h2 id="product-highlights">Product Highlights&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FindSoFun - Discover Cool Tools</title><link>https://findsofun.com/en/</link><description>Recent content on FindSoFun - Discover Cool Tools</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Mon, 22 Sep 2025 01:55:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Haye: All-in-One AI Assistant for macOS</title><link>https://findsofun.com/en/haye-ai-macos-assistant/</link><pubDate>Mon, 22 Sep 2025 01:55:00 +0000</pubDate><guid>https://findsofun.com/en/haye-ai-macos-assistant/</guid><description>&lt;h2 id="product-highlights">Product Highlights&lt;/h2>
+&lt;p>Multi-Model Access
+This macOS AI assistant integrates top models like DeepSeek, GPT-4o, Claude-3.5 and Gemini-2.0 in one app. It provides private, local processing without compromising on capability.&lt;/p>
+&lt;p>Seamless Workflow
+Invoke instantly with Command+E shortcut to analyze text, images, or files within any application. Compare responses from multiple AI models simultaneously for comprehensive answers.&lt;/p>
+&lt;p>Elegant Design
+Features a modern interface that blends perfectly with macOS aesthetics. Carefully balanced interactions and elegant typography make every usage enjoyable.&lt;/p>
+&lt;p>Easy Setup
+Installs in seconds supporting both Intel and Apple Silicon. Customize API keys, response styles, and shortcuts to create your personalized AI experience.&lt;/p>
+&lt;h2 id="pricing-model">Pricing Model&lt;/h2></description></item><item><title>FireRedTTS2: Multi-Speaker Dialogue TTS System</title><link>https://findsofun.com/en/firered-tts2-voice/</link><pubDate>Mon, 22 Sep 2025 01:54:00 +0000</pubDate><guid>https://findsofun.com/en/firered-tts2-voice/</guid><description>&lt;h2 id="product-highlights">Product Highlights&lt;/h2>
+&lt;p>Streaming long-form TTS system
+Specialized for multi-speaker dialogue generation, supporting real-time natural speech synthesis. Built on dual-transformer architecture handling text-speech interleaved sequences for flexible sentence-by-sentence generation.&lt;/p>
+&lt;p>Podcast and chatbot applications
+Generates up to 3-minute dialogues with 4 speakers, demonstrating reliable speaker switching and context-aware prosody. Achieves high similarity and low error rates in both monologue and dialogue tests.&lt;/p>
+&lt;p>Web interface simplicity
+Provides intuitive web UI supporting voice cloning and random timbre generation. User-friendly design enables quick operation and immediate preview of generation results.&lt;/p>
+&lt;p>Technical implementation
+PyTorch-based with complete pretrained models and inference code. Supports multilingual zero-shot voice cloning, offering stable performance and easy integration for developers.&lt;/p>
+&lt;h2 id="pricing-model">Pricing Model&lt;/h2></description></item><item><title>BrowserAct: No-Code AI Web Scraper</title><link>https://findsofun.com/en/browseract-ai-web-scraper/</link><pubDate>Tue, 16 Sep 2025 10:47:00 +0000</pubDate><guid>https://findsofun.com/en/browseract-ai-web-scraper/</guid><description>&lt;h2 id="product-highlights">Product Highlights&lt;/h2>
 &lt;p>AI-Powered Extraction
 This AI web scraper extracts data from any site without coding. Describe what you need in natural language, and it handles captchas and ad removal automatically. Delivers clean, reliable data ready for integration into existing workflows.&lt;/p>
 &lt;p>Real Workflow Efficiency
