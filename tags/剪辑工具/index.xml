@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>剪辑工具 on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/tags/%E5%89%AA%E8%BE%91%E5%B7%A5%E5%85%B7/</link><description>Recent content in 剪辑工具 on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 05 Sep 2025 21:04:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/tags/%E5%89%AA%E8%BE%91%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>CapCutAPI：剪辑开发者的瑞士军刀</title><link>https://findsofun.com/capcutapi-dev-tool/</link><pubDate>Fri, 05 Sep 2025 21:04:00 +0000</pubDate><guid>https://findsofun.com/capcutapi-dev-tool/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>剪辑工具 on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/tags/%E5%89%AA%E8%BE%91%E5%B7%A5%E5%85%B7/</link><description>Recent content in 剪辑工具 on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 23 Sep 2025 18:20:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/tags/%E5%89%AA%E8%BE%91%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>YARN：台词秒搜视频片段</title><link>https://findsofun.com/yarn-video-clips-search/</link><pubDate>Tue, 23 Sep 2025 18:20:00 +0000</pubDate><guid>https://findsofun.com/yarn-video-clips-search/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+&lt;p>台词直达
+这是一个通过台词搜索电影、电视剧和音乐视频片段的工具网站。输入任意台词就能快速定位到对应的视频片段，省去了手动查找的麻烦。对于内容创作者和影视爱好者来说非常实用。&lt;/p>
+&lt;p>精准匹配
+输入经典台词就能立即找到对应的视频片段，比如搜索&amp;rsquo;Gimme more&amp;rsquo;就能看到布兰妮MV的多个片段。搜索结果按时间长度分类，从0.2秒到6秒不等，满足不同使用需求。再也不用为了找一个片段而翻遍整部电影。&lt;/p>
+&lt;p>界面简洁
+网站设计极其简洁，搜索框占据主导位置，操作流程一目了然。搜索结果以卡片形式展示，包含影片名称、年份和片段时长信息。没有复杂的菜单和多余的功能干扰。&lt;/p>
+&lt;p>即搜即用
+无需注册登录，打开网站直接使用。搜索响应速度快，片段加载流畅。支持从《怪物公司》到《怪奇物语》等众多影视作品，覆盖范围广泛。&lt;/p>
+&lt;h2 id="价格模式">价格模式&lt;/h2></description></item><item><title>CapCutAPI：剪辑开发者的瑞士军刀</title><link>https://findsofun.com/capcutapi-dev-tool/</link><pubDate>Fri, 05 Sep 2025 21:04:00 +0000</pubDate><guid>https://findsofun.com/capcutapi-dev-tool/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
 &lt;p>这是一个专门为视频剪辑开发者打造的API工具平台，能够无缝对接剪映和CapCut国际版。它提供了完整的视频编辑功能接口，让开发者可以快速集成专业的剪辑能力到自己的应用中。
 双版本适配让同一套代码可以同时支持国内和国际版本，避免了重复开发的工作量。云端生成和本地导出两种模式，既保证了协作效率又兼顾了数据安全。
 接口设计非常人性化，文档清晰易懂，即使不是专业开发者也能快速上手。测试环境稳定，响应速度快，大大提升了开发调试的效率。
