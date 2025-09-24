@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>免费资源 on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/tags/%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90/</link><description>Recent content in 免费资源 on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 23 Sep 2025 18:17:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/tags/%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90/index.xml" rel="self" type="application/rss+xml"/><item><title>Flim：创意人的影视截图宝库</title><link>https://findsofun.com/flim-ai-image-database/</link><pubDate>Tue, 23 Sep 2025 18:17:00 +0000</pubDate><guid>https://findsofun.com/flim-ai-image-database/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>免费资源 on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/tags/%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90/</link><description>Recent content in 免费资源 on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 24 Sep 2025 09:37:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/tags/%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90/index.xml" rel="self" type="application/rss+xml"/><item><title>Bazarr：字幕自动管家</title><link>https://findsofun.com/bazarr-subtitle-manager/</link><pubDate>Wed, 24 Sep 2025 09:37:00 +0000</pubDate><guid>https://findsofun.com/bazarr-subtitle-manager/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+&lt;p>字幕自动搜
+Bazarr是Sonarr和Radarr的完美搭档，专门负责管理影视剧的字幕下载。它能根据你的语言偏好自动搜索缺失的字幕，一旦有合适的资源就会立即下载。再也不用手动到处找字幕了。&lt;/p>
+&lt;p>智能升级
+系统会定期扫描匹配的字幕资源，如果发现比现有版本质量更好的字幕，会自动进行替换升级。手动搜索时可以看到所有匹配选项，选择最满意的直接下载到媒体文件夹，命名规范直接适配播放器。&lt;/p>
+&lt;p>多平台支持
+支持Linux、Windows和macOS三大主流系统，可以通过Python源码运行或使用Docker容器部署。Docker版本完全隔离于主机环境，还有LSIO和Hotio的镜像支持，安装配置都很方便。&lt;/p>
+&lt;p>持续更新
+程序支持自动更新功能，Windows版本提供安装包和服务运行模式。社区支持完善，有详细的Wiki安装指南和用户手册，遇到问题可以在Discord聊天或GitHub提交issue，还有专门的subreddit讨论区。&lt;/p>
+&lt;h2 id="价格模式">价格模式&lt;/h2></description></item><item><title>Flim：创意人的影视截图宝库</title><link>https://findsofun.com/flim-ai-image-database/</link><pubDate>Tue, 23 Sep 2025 18:17:00 +0000</pubDate><guid>https://findsofun.com/flim-ai-image-database/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
 &lt;p>海量资源
 Flim是一个专门为创意工作者打造的图像数据库和截图搜索引擎，拥有超过150万张来自电影、电视剧、音乐视频和广告的剧照。它号称是全球最大的免费图像数据库之一，能快速帮用户找到表达创意所需的完美画面。对于设计师、视频创作者或任何需要视觉灵感的人来说，这里就像一个无尽的素材金矿。&lt;/p>
 &lt;p>精准搜索
