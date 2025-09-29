@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/posts/</link><description>Recent content in Posts on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sat, 27 Sep 2025 22:41:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>数字员工解放内容运营</title><link>https://findsofun.com/ai-automation-content-ops/</link><pubDate>Sat, 27 Sep 2025 22:41:00 +0000</pubDate><guid>https://findsofun.com/ai-automation-content-ops/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/posts/</link><description>Recent content in Posts on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 29 Sep 2025 12:29:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>YTS电影API：免费高清资源接口</title><link>https://findsofun.com/yts-movies-api/</link><pubDate>Mon, 29 Sep 2025 12:29:00 +0000</pubDate><guid>https://findsofun.com/yts-movies-api/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+&lt;p>电影数据接口
+这是一个专门提供YTS高清电影数据的免费API服务，开发者可以通过REST接口轻松获取电影详情、搜索过滤、排序等功能。支持JSON、JSONP和XML多种数据格式，覆盖从480p到4K的各种画质选项。&lt;/p>
+&lt;p>搜索筛选灵活
+支持按电影标题、演员、导演进行搜索，还能按类型、年份、评分、语言等多维度筛选。参数设置很人性化，比如limit控制每页结果数，page实现分页浏览，minimum_rating过滤低分影片。&lt;/p>
+&lt;p>接口设计简洁
+文档结构清晰，每个端点都有详细说明和示例。响应数据统一包含status、status_message和data字段，错误处理也很完善。支持按种子数、下载量、喜爱度等多种方式排序。&lt;/p>
+&lt;p>技术实现轻量
+作为轻量级Web服务，API调用简单直接，上手门槛低。支持Rotten Tomatoes评分集成，还提供电影推荐和分级指南等增值功能。完全免费开放，适合各种电影类应用集成。&lt;/p>
+&lt;h2 id="价格模式">价格模式&lt;/h2></description></item><item><title>数字员工解放内容运营</title><link>https://findsofun.com/ai-automation-content-ops/</link><pubDate>Sat, 27 Sep 2025 22:41:00 +0000</pubDate><guid>https://findsofun.com/ai-automation-content-ops/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
 &lt;p>这是一个展示AI自动化内容运营的实际案例，通过Claude Code和Chrome Devtools MCP组合实现B站和YouTube的评论自动回复。&lt;/p>
 &lt;p>自动化回复让内容创作者从繁琐的互动管理中解放出来，只需设定规则就能自动处理大量留言。这种方案特别适合需要高频互动的视频内容，能显著提升运营效率。&lt;/p>
 &lt;p>操作界面简洁直观，通过自然语言表达需求即可完成配置。系统能自动识别评论内容并给出相应回复，用户体验流畅自然。&lt;/p>
