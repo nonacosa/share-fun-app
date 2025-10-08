@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>前端 on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/tags/%E5%89%8D%E7%AB%AF/</link><description>Recent content in 前端 on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 22 Sep 2025 01:55:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/tags/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>Haye：Mac上的全能AI助手</title><link>https://findsofun.com/haye-ai-macos-assistant/</link><pubDate>Mon, 22 Sep 2025 01:55:00 +0000</pubDate><guid>https://findsofun.com/haye-ai-macos-assistant/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>前端 on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/tags/%E5%89%8D%E7%AB%AF/</link><description>Recent content in 前端 on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 08 Oct 2025 12:21:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/tags/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>ElevenLabs开源UI组件库</title><link>https://findsofun.com/elevenlabs-ui-components/</link><pubDate>Wed, 08 Oct 2025 12:21:00 +0000</pubDate><guid>https://findsofun.com/elevenlabs-ui-components/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+&lt;p>开源组件库
+这是一个专门为语音交互和音频处理设计的开源UI组件库，基于shadcn/ui构建，提供了丰富的可定制组件。开发者可以直接集成到项目中，快速搭建专业的语音应用界面，避免了从零开发的繁琐过程。&lt;/p>
+&lt;p>语音交互效率
+在实际客服场景中，语音组件能显著提升用户体验。用户只需点击语音按钮就能开始对话，系统实时转译语音内容，客服人员可以同时处理多个会话。这种设计特别适合需要高效沟通的在线支持场景。&lt;/p>
+&lt;p>界面设计细节
+组件库的视觉设计相当精致，Agent Orbs用彩色球体直观展示对话状态，波形图实时反馈音频输入。深色主题搭配柔和的色彩过渡，让长时间使用也不会产生视觉疲劳，交互反馈及时且自然。&lt;/p>
+&lt;p>技术特色体验
+基于React和TypeScript开发，组件API设计简洁明了。音频组件内置了ElevenLabs的语音技术，开箱即用且支持深度定制。文档清晰易懂，前端开发者半小时内就能完成第一个语音应用的搭建。&lt;/p>
+&lt;h2 id="价格模式">价格模式&lt;/h2></description></item><item><title>Haye：Mac上的全能AI助手</title><link>https://findsofun.com/haye-ai-macos-assistant/</link><pubDate>Mon, 22 Sep 2025 01:55:00 +0000</pubDate><guid>https://findsofun.com/haye-ai-macos-assistant/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
 &lt;p>这是一款专为macOS设计的AI聊天助手，让你在单个应用中体验DeepSeek、GPT-4o、Claude-3.5等顶级模型。&lt;/p>
 &lt;p>通过Command+E快捷键随时呼出，无论是处理文档、分析截图还是查询网页，都能无缝融入工作流程。支持多模型同时对话，一个答案不够就对比多个响应，大大提升决策效率。&lt;/p>
 &lt;p>界面设计完全遵循macOS生态，现代简洁的视觉风格让阅读成为享受。交互平衡得恰到好处，不堆砌功能却覆盖所有核心场景，每个细节都透着优雅。&lt;/p>
