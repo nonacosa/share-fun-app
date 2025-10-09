@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/posts/</link><description>Recent content in Posts on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 08 Oct 2025 12:21:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>ElevenLabs开源UI组件库</title><link>https://findsofun.com/elevenlabs-ui-components/</link><pubDate>Wed, 08 Oct 2025 12:21:00 +0000</pubDate><guid>https://findsofun.com/elevenlabs-ui-components/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/posts/</link><description>Recent content in Posts on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 09 Oct 2025 02:29:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>reGrowth：竞品增长监控利器</title><link>https://findsofun.com/regrowth-twitter-analytics/</link><pubDate>Thu, 09 Oct 2025 02:29:00 +0000</pubDate><guid>https://findsofun.com/regrowth-twitter-analytics/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+&lt;p>竞品透视
+这是一个专门监控Twitter竞品增长数据的工具，能实时追踪竞争对手的粉丝增长、互动率和发帖模式。它帮你看到对手的成功策略并复制到自己的账号运营中。平台覆盖超过10万个创作者的数据，让你对市场有全面了解。&lt;/p>
+&lt;p>效率提升
+使用后能大幅减少内容测试时间，直接分析竞品爆款内容来制定策略。当竞争对手获得病毒式增长时，系统会立即提醒，让你第一时间抓住市场机会。还能准确评估自己的真实表现，不再被虚荣指标迷惑。&lt;/p>
+&lt;p>界面设计
+操作界面简洁直观，数据可视化做得很好，关键指标一目了然。监控列表管理很方便，能快速添加和切换不同的竞品账号。深色主题对长时间数据分析很友好，减轻视觉疲劳。&lt;/p>
+&lt;p>技术特色
+支持一键导出CSV格式数据，方便进一步分析和报告制作。高级版本提供实时增长提醒功能，API集成让团队协作更顺畅。数据更新频率高，确保信息的时效性和准确性。&lt;/p>
+&lt;h2 id="价格模式">价格模式&lt;/h2></description></item><item><title>ElevenLabs开源UI组件库</title><link>https://findsofun.com/elevenlabs-ui-components/</link><pubDate>Wed, 08 Oct 2025 12:21:00 +0000</pubDate><guid>https://findsofun.com/elevenlabs-ui-components/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
 &lt;p>开源组件库
 这是一个专门为语音交互和音频处理设计的开源UI组件库，基于shadcn/ui构建，提供了丰富的可定制组件。开发者可以直接集成到项目中，快速搭建专业的语音应用界面，避免了从零开发的繁琐过程。&lt;/p>
 &lt;p>语音交互效率
