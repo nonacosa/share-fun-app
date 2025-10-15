@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SAAS on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/tags/saas/</link><description>Recent content in SAAS on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 09 Oct 2025 02:29:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/tags/saas/index.xml" rel="self" type="application/rss+xml"/><item><title>reGrowth：竞品增长监控利器</title><link>https://findsofun.com/regrowth-twitter-analytics/</link><pubDate>Thu, 09 Oct 2025 02:29:00 +0000</pubDate><guid>https://findsofun.com/regrowth-twitter-analytics/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SAAS on FindSoFun - 发现有趣工具</title><link>https://findsofun.com/tags/saas/</link><description>Recent content in SAAS on FindSoFun - 发现有趣工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 15 Oct 2025 18:36:00 +0000</lastBuildDate><atom:link href="https://findsofun.com/tags/saas/index.xml" rel="self" type="application/rss+xml"/><item><title>服务状态一网打尽</title><link>https://findsofun.com/isdown-status-aggregator/</link><pubDate>Wed, 15 Oct 2025 18:36:00 +0000</pubDate><guid>https://findsofun.com/isdown-status-aggregator/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
+&lt;p>聚合监控
+这是一个专门监控各类云服务和网站状态的状态页面聚合平台，能够实时追踪超过4500家供应商的服务状态，包括AWS、Azure、GitHub等主流云服务商。平台将所有供应商的状态信息集中展示，让用户在一个页面就能了解所有相关服务的运行情况。&lt;/p>
+&lt;p>告警及时
+当服务出现故障时，平台能够立即发送告警通知，支持通过Slack、MS Teams、Google Chat等多种渠道接收。这种即时告警机制让运维团队能够在问题发生的第一时间做出响应，大大缩短了故障处理时间。&lt;/p>
+&lt;p>界面清晰
+平台界面设计简洁明了，用不同颜色和状态标识清晰展示各项服务的运行状况。用户可以快速浏览到Google Cloud、Microsoft Azure、Cloudflare等热门服务的当前状态和历史故障记录，信息呈现直观易懂。&lt;/p>
+&lt;p>集成丰富
+平台提供了丰富的集成选项，支持与Datadog、Better Stack等监控工具对接，还能与Zendesk、FreshService等支持系统集成。API接口让开发者能够灵活定制监控方案，满足不同团队的特定需求。&lt;/p>
+&lt;h2 id="价格模式">价格模式&lt;/h2></description></item><item><title>reGrowth：竞品增长监控利器</title><link>https://findsofun.com/regrowth-twitter-analytics/</link><pubDate>Thu, 09 Oct 2025 02:29:00 +0000</pubDate><guid>https://findsofun.com/regrowth-twitter-analytics/</guid><description>&lt;h2 id="产品亮点">产品亮点&lt;/h2>
 &lt;p>竞品透视
 这是一个专门监控Twitter竞品增长数据的工具，能实时追踪竞争对手的粉丝增长、互动率和发帖模式。它帮你看到对手的成功策略并复制到自己的账号运营中。平台覆盖超过10万个创作者的数据，让你对市场有全面了解。&lt;/p>
 &lt;p>效率提升
